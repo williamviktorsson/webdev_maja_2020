@@ -1,5 +1,5 @@
 
-## Assignment 1
+# Assignment 1
 
 In this first assignment you'll be practicing git, HTML, CSS and JavaScript.
 
