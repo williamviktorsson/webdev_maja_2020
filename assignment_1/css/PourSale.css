@@ -8,6 +8,10 @@
     color: purple;
 }
 
+body {
+    color: green;
+}
+
 #circle {
     background: green;
     border-radius: 50%;
