@@ -26,7 +26,12 @@ while read line; do
 name=${line//[[:blank:]]/}
 cat > css/${name::-1}.css <<EOF
 
-h3 {
+/*
+    Make sure to only make css changes to elements with your ID,
+    or children of elements with your ID
+*/ 
+
+#${name::-1} h3 {
     color: #6699CC;
 }
 
