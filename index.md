@@ -16,8 +16,9 @@ Complete the following steps:
     ```
 
 3. [The result of your code will be viewable here](assignment_1). Start by taking a look.
-    - You'll be adding to a javascript file that has a randomized name you've been provided earlier.
+    - You'll be adding to a **.js** file that has a randomized name you've been provided earlier.
     - The code you write will add and change content under a specific section of the website that has your name on it.
+    - You also have a **.css** file in your name to make css changes in, should you not wish to make them all in code.
 
 4. You are tasked to add the following items and functionality under your randomized name.
     - Add any geometric object of any color distinguishable from the background. You're allowed to make something more exciting than a simple geometric volume as well.
@@ -27,6 +28,10 @@ Complete the following steps:
     - All added content must be safe for work.
 
 5. The VSCode extension `Live Server` is great for viewing the results of your changes as you are writing them.
+    - Go to the extensions panel on the left of VSCode.
+    - Search and download **Live Server**
+    - To run: `CTRL + SHIFT + P` in VSCode and write `Live Server`
+        - Choose `Live Server: Open with Live Sever`
 
 6. You'll need a few git operations to add your changes to the remote repository.
     - ``git add .``

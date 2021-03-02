@@ -24,10 +24,26 @@ done < names
 
 while read line; do
 name=${line//[[:blank:]]/}
+cat > css/${name::-1}.css <<EOF
+
+h3 {
+    color: #6699CC;
+}
+
+EOF
+done < names
+
+while read line; do
+name=${line//[[:blank:]]/}
 echo '<h2 id="'${name::-1}'">'${name::-1}'</h2>'
 done < names
 
 while read line; do
 name=${line//[[:blank:]]/}
 echo '<script src="'js/${name::-1}.js'"></script>'
+done < names
+
+while read line; do
+name=${line//[[:blank:]]/}
+echo '<link rel="stylesheet" href="'css/${name::-1}.css'"></link>'
 done < names
