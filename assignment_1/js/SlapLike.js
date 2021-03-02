@@ -5,7 +5,7 @@
 function example() {
     let nameElement = document.getElementById("SlapLike");
     let objectEl = document.createElement("h3");
-    objectEl.textContent = "Example :)";
+    objectEl.textContent = "Elton > Axel";
     nameElement.appendChild(objectEl);
 }
 
