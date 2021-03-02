@@ -13,12 +13,13 @@
     border-left: 25px solid transparent;
 	border-right: 25px solid transparent;
 	border-bottom: 50px solid rgb(85, 85, 85);
+    
 }
-/*#WildArch .button1{
-    background-color: grey;
+#WildArch .button1{
+    background-color: rgb(255, 0, 0);
     border: hotpink;
     color: indigo;
-    padding: 15px 32px;
+    padding: 150x 320px;
     cursor: pointer;
 }
 #WildArch .button1:hover{
