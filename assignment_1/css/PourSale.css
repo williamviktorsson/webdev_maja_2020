@@ -5,6 +5,17 @@
 */ 
 
 #PourSale h3 {
-    color: red;
+    color: purple;
+}
+
+body {
+    color: green;
+}
+
+#circle {
+    background: green;
+    border-radius: 50%;
+    width: 69px;
+    height: 69px;
 }
 
