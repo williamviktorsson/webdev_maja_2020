@@ -1,5 +1,10 @@
 
-h3 {
+/*
+    Make sure to only make css changes to elements with your ID,
+    or children of elements with your ID
+*/ 
+
+#PonyHalf h3 {
     color: #6699CC;
 }
 
