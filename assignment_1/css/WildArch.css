@@ -5,6 +5,24 @@
 */ 
 
 #WildArch h3 {
-    color: #6699CC;
+    color: #a51d3a;
+}
+#WildArch .Triangle-up{
+    width: 2;
+    Height: 3;
+    border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid rgb(85, 85, 85);
+}
+/*#WildArch .button1{
+    background-color: grey;
+    border: hotpink;
+    color: indigo;
+    padding: 15px 32px;
+    cursor: pointer;
+}
+#WildArch .button1:hover{
+    background-color: lawngreen;
+    color:rgb(255, 255, 255);
 }
 
