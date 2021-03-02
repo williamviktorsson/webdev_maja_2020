@@ -97,3 +97,29 @@ var imgChanger = function(e){
 
 
 slideshow.addEventListener("click", imgChanger);
+
+
+let gamer = document.createElement("div");
+gamer.className = "FFgamer";
+nameElement.appendChild(gamer);
+
+var offset = 0;
+var comeBack = false;
+var anim = function(){
+    if (offset >= 100){
+        comeBack = true;
+    }
+    if (offset <= 0){
+        comeBack = false;
+    }
+
+    if (comeBack){
+        offset--;
+    }else{
+        offset++;
+    }
+
+    gamer.style.marginLeft = offset.toString() + "%";
+}
+
+window.setInterval(anim, 10);
