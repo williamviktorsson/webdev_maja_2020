@@ -7,18 +7,27 @@ function example() {
     let objectEl = document.createElement("h3");
     objectEl.textContent = "Joe mama :)";
     nameElement.appendChild(objectEl);
+    let triangleEl = document.createElement("div")
+    triangleEl.className = "Triangle-up"
+    nameElement.appendChild(triangleEl);
+    let buttonEl = document.createElement("button")
+    buttonEl.className = "button"
+    nameElement.appendChild(buttonEl)
+
 }
 
 example();
 
 
-function triangleFunction();{
-    document.getElementById("demo").innerHTML = "Hello World";
+function buttonfunction(buttonEl){
+    
+    onclick = document.getElementById(triangleEl).style.color = 'blue';
+    
+    
 
 
 
-
-};
+}
 
 
 

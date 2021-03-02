@@ -8,21 +8,24 @@
     color: #a51d3a;
 }
 #WildArch .Triangle-up{
-    width: 2;
-    Height: 3;
-    border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-bottom: 50px solid rgb(85, 85, 85);
+    width: 20px;
+    Height: 30px;
+    color: seagreen;
+    background-color: green;
+    
+	
     
 }
-#WildArch .button1{
+#WildArch .button{
+    height: 30px;
+    width: 40px;
     background-color: rgb(255, 0, 0);
     border: hotpink;
     color: indigo;
     padding: 150x 320px;
     cursor: pointer;
 }
-#WildArch .button1:hover{
+#WildArch .button:hover{
     background-color: lawngreen;
     color:rgb(255, 255, 255);
 }
