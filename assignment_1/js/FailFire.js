@@ -20,6 +20,10 @@ var buttonChange = function(){
         objectEl.textContent = ":)";
         knappen.textContent = "regret";
         objectEl.className += " FFregret";
+        var ljudshit = document.createElement("audio");
+        ljudshit.src = "https://www.kasandbox.org/programming-sounds/rpg/giant-no.mp3";
+        ljudshit.autoplay = true;
+        document.body.appendChild(ljudshit);
         oneVone = true;
     }
     else{
@@ -93,5 +97,3 @@ var imgChanger = function(e){
 
 
 slideshow.addEventListener("click", imgChanger);
-
-
