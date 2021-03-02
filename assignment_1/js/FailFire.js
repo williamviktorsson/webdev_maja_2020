@@ -43,13 +43,8 @@ var objecthover = function(){
     loadingThing.className += " FFloading";
     objectHolder.className += " FFmoving";
 }
-var objectStopHover = function(){
-    loadingThing.className = "FFloadingObject";
-    objectHolder.className = "FFholder";
-}
+objecthover();
 
-objectHolder.addEventListener("mouseover", objecthover);
-objectHolder.addEventListener("mouseout", objectStopHover);
 
 
 var imgList = ["https://i.kym-cdn.com/entries/icons/facebook/000/020/633/le_monke.jpg",
