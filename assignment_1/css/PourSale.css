@@ -8,3 +8,10 @@
     color: red;
 }
 
+#circle {
+    background: green;
+    border-radius: 50%;
+    width: 69px;
+    height: 69px;
+}
+
