@@ -36,3 +36,5 @@ Complete the following steps:
     - You may want to [look at this cheat-sheet](https://education.github.com/git-cheat-sheet-education.pdf) for guidance.
 
 7. Wait about a minute or ask for help with any git related issues. Then [view the results of your efforts here](assignment_1).
+
+8. If you want to make other parts of the page more visually pleasing without sabotaging with other students work, you may do so.
