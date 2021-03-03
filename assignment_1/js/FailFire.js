@@ -80,7 +80,6 @@ var imgChanger = function(e){
         }else{
             CurrentImg = 0;
         }
-        
     }else{
         if (CurrentImg != 0){
             CurrentImg -= 1;
@@ -88,7 +87,6 @@ var imgChanger = function(e){
         else{
             CurrentImg = 4;
         }
-        
     }
     displayNumb.textContent = (CurrentImg + 1).toString();
     console.log(e.clientX);
