@@ -3,21 +3,21 @@
     Make sure to only make css changes to elements with your ID,
     or children of elements with your ID
 */ 
-/*
+
 #CoreMonk h3 {
     color: #ff8400;
-} */
+} 
 
-.FFregret{
+.CMregret{
     padding-top: 400px;
     padding-bottom: 400px;
-    animation-name: FFwtf;
+    animation-name: CMwtf;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 
-@keyframes FFwtf{
+@keyframes CMwtf{
     10%{
         transform: rotate(45deg);
       }
