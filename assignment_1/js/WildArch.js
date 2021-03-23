@@ -32,6 +32,7 @@ function buttonfunction(){
    
     let triangleEl = document.getElementById("unaiTriangle")
     triangleEl.className = "Triangle-up2"
+    button.className=button.className=="unaiTriangle"?"Triangle-up2":"unaiTriangle";
     
     
 }
