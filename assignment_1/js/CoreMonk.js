@@ -5,7 +5,7 @@
 function example() {
     let nameElement = document.getElementById("CoreMonk");
     let objectEl = document.createElement("h3");
-    objectEl.textContent = "Pog Champ";
+    objectEl.textContent = "Pog Champu UwU";
     nameElement.appendChild(objectEl);
 }
 
