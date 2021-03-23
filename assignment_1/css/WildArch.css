@@ -39,4 +39,10 @@
     background-color: lawngreen;
     color:rgb(255, 255, 255);
 }
+#WildArch .oval{
+    height: 50px;
+  width: 100px;
+  background-color: blue;
+  border-radius: 50%;
+}
 
