@@ -96,10 +96,19 @@ function slideshow(){
 
     let slideEl = document.createElement("div")
     slideEl.id = "bruh"
-    nameElement.appendChild(slideEl)
-    let nudepics = ['https://scale.coolshop-cdn.com/product-media.coolshop-cdn.com/236NC5/b535b89568c240f3be08260009e21d83.jpg/f/minecraft-mini-crafter-zombie-plush.jpg', 'https://static.wikia.nocookie.net/minecraft/images/e/e8/New_Zombie.png/revision/latest?cb=20190525152011', 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/00/Zombie_SSBU.webp/revision/latest/scale-to-width-down/250?cb=20201002040351']
     
 
+    let nudepics = ['https://scale.coolshop-cdn.com/product-media.coolshop-cdn.com/236NC5/b535b89568c240f3be08260009e21d83.jpg/f/minecraft-mini-crafter-zombie-plush.jpg', 'https://static.wikia.nocookie.net/minecraft/images/e/e8/New_Zombie.png/revision/latest?cb=20190525152011', 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/00/Zombie_SSBU.webp/revision/latest/scale-to-width-down/250?cb=20201002040351']
+    for (let i = 0; i < nudepics.length; i++){
+    let bruhEl = document.createElement("img")
+    bruhEl.src = nudepics[i]
+    slideEl.appendChild(bruhEl)
+
+        
+        
+    }
+    nameElement.appendChild(slideEl)
+  
 
 
 
@@ -107,21 +116,21 @@ function slideshow(){
 
 
     var slideShow = function(container) {
-        this.images = nudepics;
+        this.nudepics = [];
         this.curImage = 0;
         for (i = 0; i < container.childElementCount; i++) {
-            this.images.push(container.children[i]);
-            this.images[i].style.display = "none";
+            this.nudepics.push(container.children[i]);
+            this.nudepics[i].style.display = "none";
         }
         
        
         var nextSlide = function() {
-            for (var i = 0; i < this.images.length; i++) {
-                this.images[i].style.display = "none";
+            for (var i = 0; i < this.nudepics.length; i++) {
+                this.nudepics[i].style.display = "none";
             }
-            this.images[this.curImage].style.display = "block";
+            this.nudepics[this.curImage].style.display = "block";
             this.curImage++;
-            if (this.curImage >= this.images.length) {
+            if (this.curImage >= this.nudepics.length) {
                 this.curImage = 0;
             }
             window.setTimeout(nextSlide.bind(this), 1000);
