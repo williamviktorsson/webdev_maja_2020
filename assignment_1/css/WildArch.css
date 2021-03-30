@@ -10,12 +10,22 @@
 #WildArch .Triangle-up{
     width: 20px;
     Height: 30px;
-    color: seagreen;
     background-color: green;
+    animation: travel 10s linear infinite;
     
 	
     
 }
+#WildArch .Triangle-up2{
+    width: 20px;
+    Height: 30px;
+    color: red;
+    background-color: red;
+    
+	
+    
+}
+
 #WildArch .button{
     height: 30px;
     width: 40px;
@@ -24,9 +34,15 @@
     color: indigo;
     padding: 150x 320px;
     cursor: pointer;
+    
 }
 #WildArch .button:hover{
     background-color: lawngreen;
     color:rgb(255, 255, 255);
+}
+#WildArch .oval1{
+    width: 100px;
+    height: 300px;
+    border-radius: 50%;
 }
 

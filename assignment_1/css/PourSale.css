@@ -4,18 +4,123 @@
     or children of elements with your ID
 */ 
 
+
+
 #PourSale h3 {
-    color: purple;
+    color: red;
 }
 
-body {
-    color: green;
+#PourSale .square{
+    height: 50px;
+    width: 50px;
+    background-color: green;
 }
 
-#circle {
-    background: green;
+#PourSale .coolCircle{
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
-    width: 69px;
-    height: 69px;
+    background-color: hotpink;
+    animation-name: colorChange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    margin-left: 112px;
 }
 
+#PourSale .spaceboi {
+    box-shadow: 0 0 0 1em red,
+    0 1em 0 1em red,
+    -2.5em 1.5em 0 .5em red,
+    2.5em 1.5em 0 .5em red,
+    -3em -3em 0 0 red,
+    3em -3em 0 0 red,
+    -2em -2em 0 0 red,
+    2em -2em 0 0 red,
+    -3em -1em 0 0 red,
+    -2em -1em 0 0 red,
+    2em -1em 0 0 red,
+    3em -1em 0 0 red,
+    -4em 0 0 0 red,
+    -3em 0 0 0 red,
+    3em 0 0 0 red,
+    4em 0 0 0 red,
+    -5em 1em 0 0 red,
+    -4em 1em 0 0 red,
+    4em 1em 0 0 red,
+    5em 1em 0 0 red,
+    -5em 2em 0 0 red,
+    5em 2em 0 0 red,
+    -5em 3em 0 0 red,
+    -3em 3em 0 0 red,
+    3em 3em 0 0 red,
+    5em 3em 0 0 red,
+    -2em 4em 0 0 red,
+    -1em 4em 0 0 red,
+    1em 4em 0 0 red,
+    2em 4em 0 0 red;
+    background: red;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    margin: 100px 0 150px 150px;
+  }
+
+  #PourSale .spaceboi2 {
+    box-shadow: 0 0 0 1em blue,
+    0 1em 0 1em blue,
+    -2.5em 1.5em 0 .5em blue,
+    2.5em 1.5em 0 .5em blue,
+    -3em -3em 0 0 blue,
+    3em -3em 0 0 blue,
+    -2em -2em 0 0 blue,
+    2em -2em 0 0 blue,
+    -3em -1em 0 0 blue,
+    -2em -1em 0 0 blue,
+    2em -1em 0 0 blue,
+    3em -1em 0 0 blue,
+    -4em 0 0 0 blue,
+    -3em 0 0 0 blue,
+    3em 0 0 0 blue,
+    4em 0 0 0 blue,
+    -5em 1em 0 0 blue,
+    -4em 1em 0 0 blue,
+    4em 1em 0 0 blue,
+    5em 1em 0 0 blue,
+    -5em 2em 0 0 blue,
+    5em 2em 0 0 blue,
+    -5em 3em 0 0 blue,
+    -3em 3em 0 0 blue,
+    3em 3em 0 0 blue,
+    5em 3em 0 0 blue,
+    -2em 4em 0 0 blue,
+    -1em 4em 0 0 blue,
+    1em 4em 0 0 blue,
+    2em 4em 0 0 blue;
+    background: blue;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    margin: 100px 0 150px 150px;
+  }
+
+  @keyframes colorChange {
+    0% {
+      background-color: #07cf82;
+    }
+    20% {
+        background-color: #550cdd;
+      }
+    40% {
+        background-color: #900dc4;
+    }
+    60% {
+        background-color: #b91388;
+    }
+    80% {
+        background-color: #d81717;
+    }
+    100% {
+      background-color: #10bbda;
+    }
+
+  }
