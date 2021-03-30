@@ -13,8 +13,14 @@ function example() {
     nameElement.appendChild(triangleEl);
     let buttonEl = document.createElement("button")
     buttonEl.className = "button"
-    buttonEl.onclick = buttonfunction
+    buttonEl.onclick = buttonfunction;
     nameElement.appendChild(buttonEl);
+
+
+   
+
+    
+    
 
   
 
@@ -44,7 +50,61 @@ function example() {
     };
     nameElement.appendChild(ovalEl);
     changeColor();
+
+    
 }
+
+
+function slideshowBruh(){
+
+    let slideEl = document.createElement("div")
+    slideEl.id = "slideshow"
+    let images = ['https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/00/Zombie_SSBU.webp/revision/latest/scale-to-width-down/250?cb=20201002040351', 'https://static.wikia.nocookie.net/minecraft/images/e/e8/New_Zombie.png/revision/latest?cb=20190525152011']
+    for (let i = 0; i < pictures.length; i++) {
+        let joeEl = document.createElement('img');
+        joeEl.src = images[i];
+        joeEl.alt = 'bruh';
+        joeEl.style.height = '300px'
+        slideEl.appendChild(joeEl);
+    };
+    nameElement.appendChild(slideEl)
+
+    var slideShow = function(container) {
+        this.images = [];
+        this.curImage = 0;
+        for (i = 0; i < container.childElementCount; i++) {
+            this.images.push(container.children[i]);
+            this.images[i].style.display = "none";
+        }
+        
+        // Handle going to to the next slide
+        var nextSlide = function() {
+            for (var i = 0; i < this.images.length; i++) {
+                this.images[i].style.display = "none";
+            }
+            this.images[this.curImage].style.display = "block";
+            this.curImage++;
+            if (this.curImage >= this.images.length) {
+                this.curImage = 0;
+            }
+            window.setTimeout(nextSlide.bind(this), 1000);
+        };
+        
+        nextSlide.call(this);
+    };
+    slideShow(document.getElementById("slideshow"));
+
+
+
+
+
+
+
+
+
+}
+
+
 
 
   
