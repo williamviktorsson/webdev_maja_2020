@@ -18,7 +18,7 @@ function example() {
     let butEl = document.createElement("button");
     butEl.textContent = "huh";
     let clicked = function(){
-        squareEl.style.backgroundColor = "rgb(69,69,69)";
+        squareEl.className = 'ChangedSquare';
     }
     butEl.addEventListener("huh", clicked);
     nameElement.appendChild(butEl);
