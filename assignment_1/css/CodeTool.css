@@ -8,8 +8,8 @@
     color: pink;
 }
 
-#CodeTool .Square {
-    height: 420px;
-    width: 420px;
+#CodeTool .BigBox {
+    height: 42px;
+    width: 42px;
     background-color: darkblue;
 }
