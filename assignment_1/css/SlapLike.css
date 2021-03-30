@@ -8,8 +8,9 @@
     color: red;
 }
 
-#SlapLike img {
+#SlapLike .jakt {
     position: relative;
+    top: 300px;
 }
 
 #SlapLike #cirkel {
@@ -30,18 +31,45 @@
 #SlapLike #box1{
     background-color: lightpink;
     padding:5px;
-    width:500px;
-    height:250px;
+    width:700px;
+    height:350px;
     position: relative;
-    left: 450px;
-    bottom: 200px;
+    left: 500px;
+    bottom: 250px;
 }
 
 #SlapLike .quizButton {
-    height: 20px;
-    width: 90px;
+    background-color: navy;
+    color: white;
+    font-size: large;
+    height: 40px;
+    width: 150px;
     position: relative;
-    left: 500px;
-    bottom: 200px;
+    top: 100px;
+    text-align: center;
+}
+
+#SlapLike #jacob {
+    position: relative;
+    height: 200px;
+    width: 150px;
+    top: 40px;
+    right: 420px;
+}
+
+#SlapLike #axel {
+    position: relative;
+    height: 200px;
+    width: 150px;
+    bottom: 175px;
+    left: 275px;
+}
+
+#SlapLike #isak {
+    position: relative;
+    height: 200px;
+    width: 150px;
+    bottom: 175px;
+    left: 370px;
 }
 

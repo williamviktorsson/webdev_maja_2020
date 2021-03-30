@@ -11,17 +11,20 @@ function example() {
 
     //the geometric object
     let squareEl = document.createElement("div");
-    squareEl.className = 'Square';
+    squareEl.className = 'RedBox';
     nameElement.appendChild(squareEl);
 
     //the colorchanging button
     let butEl = document.createElement("button");
     butEl.textContent = "huh";
+    nameElement.appendChild(butEl);
+
     let clicked = function(){
-        squareEl.className = 'ChangedSquare';
+        squareEl.className = 'PinkBox';
     }
     butEl.addEventListener("huh", clicked);
-    nameElement.appendChild(butEl);
+    
+    
 }
 
 example();
