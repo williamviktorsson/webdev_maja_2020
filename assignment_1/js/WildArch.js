@@ -2,19 +2,24 @@
     Do everything you want in functions because you do not want to define global variables.
 */
 
-function example() {
+function example(){
     let nameElement = document.getElementById("WildArch");
+
     let objectEl = document.createElement("h3");
     objectEl.textContent = "Assigment 1 :)";
     nameElement.appendChild(objectEl);
+
     let triangleEl = document.createElement("div")
     triangleEl.className = "Triangle-up"
     triangleEl.id = "unaiTriangle"
     nameElement.appendChild(triangleEl);
+
     let buttonEl = document.createElement("button")
-    buttonEl.className = "button"
+    buttonEl.className = "buttonUnai"
     buttonEl.onclick = buttonfunction;
     nameElement.appendChild(buttonEl);
+
+
 
 
    
@@ -52,32 +57,64 @@ function example() {
     changeColor();
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
+example();
 
-function slideshowBruh(){
+function slideshow(){
 
     let slideEl = document.createElement("div")
-    slideEl.id = "slideshow"
-    let images = ['https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/00/Zombie_SSBU.webp/revision/latest/scale-to-width-down/250?cb=20201002040351', 'https://static.wikia.nocookie.net/minecraft/images/e/e8/New_Zombie.png/revision/latest?cb=20190525152011']
-    for (let i = 0; i < pictures.length; i++) {
-        let joeEl = document.createElement('img');
-        joeEl.src = images[i];
-        joeEl.alt = 'bruh';
-        joeEl.style.height = '300px'
-        slideEl.appendChild(joeEl);
-    };
+    slideEl.id = "bruh"
     nameElement.appendChild(slideEl)
+    let nudepics = ['https://scale.coolshop-cdn.com/product-media.coolshop-cdn.com/236NC5/b535b89568c240f3be08260009e21d83.jpg/f/minecraft-mini-crafter-zombie-plush.jpg', 'https://static.wikia.nocookie.net/minecraft/images/e/e8/New_Zombie.png/revision/latest?cb=20190525152011', 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/00/Zombie_SSBU.webp/revision/latest/scale-to-width-down/250?cb=20201002040351']
+    
+
+
+
+
+
+
 
     var slideShow = function(container) {
-        this.images = [];
+        this.images = nudepics;
         this.curImage = 0;
         for (i = 0; i < container.childElementCount; i++) {
             this.images.push(container.children[i]);
             this.images[i].style.display = "none";
         }
         
-        // Handle going to to the next slide
+       
         var nextSlide = function() {
             for (var i = 0; i < this.images.length; i++) {
                 this.images[i].style.display = "none";
@@ -95,14 +132,10 @@ function slideshowBruh(){
     slideShow(document.getElementById("slideshow"));
 
 
-
-
-
-
-
-
-
 }
+slideshow();
+
+
 
 
 
@@ -113,7 +146,7 @@ function slideshowBruh(){
 
 
 
-example();
+
 
 
 
@@ -123,7 +156,7 @@ function buttonfunction(){
    
     let triangleEl = document.getElementById("unaiTriangle")
     triangleEl.className = "Triangle-up2"
-    button.className=button.className=="unaiTriangle"?"Triangle-up2":"unaiTriangle";
+    buttonUnai.className=buttonUnai.className=="unaiTriangle"?"Triangle-up2":"unaiTriangle";
     
     
 }
