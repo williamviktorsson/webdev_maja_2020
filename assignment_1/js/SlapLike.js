@@ -8,7 +8,7 @@ function example() {
     objectEl.textContent = "Axel trollar"
 
     let button = document.createElement("button")
-    button.innerHTML = "Klicka här"
+    button.textContent = "Byt färg"
     button.addEventListener("click", changeColor)
 
     let img1 = document.createElement("img")
@@ -57,14 +57,16 @@ function example() {
 
         let button1 = document.createElement("button")
         button1.className = "quizButton"
+        button1.id = "jacobKnapp"
         button1.textContent = "Jacob är bäst"
-        
         box.appendChild(button1)
         button1.style.left = "30px"
+        button1.addEventListener("click", JAI )
         
 
         let button2 = document.createElement("button")
         button2.className = "quizButton"
+        button2.id = "axelKnapp"
         button2.textContent = "Axel är bäst"
         button2.style.left = "125px"
         box.appendChild(button2)
@@ -72,6 +74,7 @@ function example() {
 
         let button3 = document.createElement("button")
         button3.className = "quizButton"
+        button3.id = "isakKnapp"
         button3.textContent = "Isak är bäst"
         button3.style.left = "220px"
         box.appendChild(button3)
@@ -93,6 +96,30 @@ function example() {
         
     }
 
+    function JAI(){
+        if(document.getElementById("jacobKnapp").textContent == "Jacob är bäst"){
+            document.getElementById("jacobKnapp").textContent = "Jacob är bäst"
+            document.getElementById("jacobKnapp").style.backgroundColor = "green"
+
+            document.getElementById("axelKnapp").textContent = "Axel suger"
+            document.getElementById("axelKnapp").style.backgroundColor = "red"
+
+            document.getElementById("isakKnapp").textContent = "Isak är mjä"
+            document.getElementById("isakKnapp").style.backgroundColor = "orange"
+        } else {
+            document.getElementById("jacobKnapp").textContent = "Jacob är bäst"
+            document.getElementById("jacobKnapp").style.backgroundColor = "navy"
+
+            document.getElementById("axelKnapp").textContent = "Axel är bäst"
+            document.getElementById("axelKnapp").style.backgroundColor = "navy"
+
+            document.getElementById("isakKnapp").textContent = "Isak är bäst"
+            document.getElementById("isakKnapp").style.backgroundColor = "navy"
+        }
+        
+        
+    }
+
    
     nameElement.appendChild(objectEl);
     nameElement.appendChild(cirkel)
@@ -101,6 +128,7 @@ function example() {
     nameElement.appendChild(img2)
     imgMove()
     quiz()
+  
     window.setInterval(changeColor, 1000)
 }
 
