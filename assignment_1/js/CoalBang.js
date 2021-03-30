@@ -27,7 +27,7 @@ function example() {
     }
     else
         objectEl.textContent = "hej isak" 
-        number = number +1
+        number = number + 1
 }
 }
 example();
