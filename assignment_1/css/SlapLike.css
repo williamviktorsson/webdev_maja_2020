@@ -12,3 +12,36 @@
     position: relative;
 }
 
+#SlapLike #cirkel {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+#SlapLike button {
+    height: 20px;
+    width: 90px;
+    position: relative;
+    right: -110px;
+    bottom: 200px;
+}
+
+#SlapLike #box1{
+    background-color: lightpink;
+    padding:5px;
+    width:500px;
+    height:250px;
+    position: relative;
+    left: 450px;
+    bottom: 200px;
+}
+
+#SlapLike .quizButton {
+    height: 20px;
+    width: 90px;
+    position: relative;
+    left: 500px;
+    bottom: 200px;
+}
+
