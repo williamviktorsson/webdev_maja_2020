@@ -5,8 +5,12 @@
 function example() {
     let nameElement = document.getElementById("TileCell");
     let objectEl = document.createElement("h3");
-    objectEl.textContent = "Example :)";
+    objectEl.textContent = "Oändlig smärta";
     nameElement.appendChild(objectEl);
+
+    let squareEl = document.createElement("div");
+    squareEl.className = 'Square';
+    nameElement.appendChild(squareEl);
 }
 
 example();
