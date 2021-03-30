@@ -65,14 +65,14 @@ function example() {
 
         let button2 = document.createElement("button")
         button2.className = "quizButton"
-        button2.textContent = "Isak är bäst"
+        button2.textContent = "Axel är bäst"
         button2.style.left = "125px"
         box.appendChild(button2)
         
 
         let button3 = document.createElement("button")
         button3.className = "quizButton"
-        button3.textContent = "Axel är bäst"
+        button3.textContent = "Isak är bäst"
         button3.style.left = "220px"
         box.appendChild(button3)
 
