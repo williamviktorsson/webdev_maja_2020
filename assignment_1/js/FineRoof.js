@@ -7,6 +7,7 @@ function example() {
     let objectEl = document.createElement("h3");
     objectEl.textContent = "Example :)";
     nameElement.appendChild(objectEl);
+    let box = document.createElement("box");
 }
 
 example();

@@ -5,9 +5,9 @@
 function example() {
     let nameElement = document.getElementById("CoalBang");
     let objectEl = document.createElement("h3");
-    objectEl.textContent = "Example :)";
+    objectEl.textContent = "hej isak :)";
     nameElement.appendChild(objectEl);
 }
 
-example();
+example(); 
 
