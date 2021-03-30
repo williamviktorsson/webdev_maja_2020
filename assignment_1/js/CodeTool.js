@@ -13,7 +13,7 @@ function example() {
 
     //Min fyrkanten
     let squareEl = dokument.createElement("div")
-    squareEl.className = "Square";
+    squareEl.className = "BigBox";
     nameElement.appendChild(squareEl);
 }
 
