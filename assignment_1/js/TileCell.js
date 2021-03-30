@@ -15,12 +15,13 @@ function example() {
     nameElement.appendChild(squareEl);
 
     //the colorchanging button
-    let butEl = document.createElement("button")
-    butEl.textContent = "do a switcheroo"
+    let butEl = document.createElement("button");
+    butEl.textContent = "huh";
     let clicked = function(){
         squareEl.style.backgroundColor = 'green';
     }
-
+    butEl.addEventListener("huh", clicked);
+    nameElement.appendChild(butEl);
 }
 
 example();
