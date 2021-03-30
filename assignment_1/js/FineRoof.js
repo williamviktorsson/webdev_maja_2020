@@ -6,10 +6,16 @@ let FineRoofCanvas = document.getElementById("FineRoof");
 
 function example() {
     let objectEl = document.createElement("h3");
+<<<<<<< HEAD
+    objectEl.textContent = "Example :)";
+    nameElement.appendChild(objectEl);
+    let box = document.createElement("box");
+=======
     objectEl.textContent = "wrow";
     objectEl.style.backgroundColor = "black";
     objectEl.style.width = "70px"
     FineRoofCanvas.appendChild(objectEl);
+>>>>>>> 4c1a1f966a3414f1ce7e2e65d52a104ba4f7a12a
 }
 
 function circle(){

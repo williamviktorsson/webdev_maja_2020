@@ -8,3 +8,9 @@
     color: #f700ff;
 }
 
+#TileCell .Square {
+   height: 69px;
+   width: 69px;
+   background-color: darkred;
+}
+
