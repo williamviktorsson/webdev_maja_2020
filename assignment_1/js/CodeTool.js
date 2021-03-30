@@ -8,7 +8,7 @@ function example() {
     //Min namnen
     let nameElement = document.getElementById("CodeTool");
     let objectEl = document.createElement("h3");
-    objectEl.textContent = "Example :)";
+    objectEl.textContent = "Amogus";
     nameElement.appendChild(objectEl);
 
     //Min fyrkanten
