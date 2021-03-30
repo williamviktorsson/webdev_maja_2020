@@ -8,7 +8,7 @@ function example() {
     objectEl.textContent = "hej isak :)";
     nameElement.appendChild(objectEl);
     let boxEl = document.createElement("div");
-    boxEl.className = newBox
+    boxEl.className = "newBox";
     newBox.style.color = "blue";
     nameElement.appendChild(boxEl)
 }
