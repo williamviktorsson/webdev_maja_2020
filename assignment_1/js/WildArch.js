@@ -13,8 +13,10 @@ function example() {
     nameElement.appendChild(triangleEl);
     let buttonEl = document.createElement("button")
     buttonEl.className = "button"
-    buttonEl.onclick = buttonfunction;
-    nameElement.appendChild(buttonEl)
+    buttonEl.onclick = buttonfunction
+    nameElement.appendChild(buttonEl);
+
+  
 
   
     
