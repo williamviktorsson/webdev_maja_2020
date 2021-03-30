@@ -17,11 +17,14 @@ function example() {
     //the colorchanging button
     let butEl = document.createElement("button");
     butEl.textContent = "huh";
+    nameElement.appendChild(butEl);
+    
     let clicked = function(){
-        squareEl.className = 'ChangedSquare';
+        squareEl.className = 'Square2';
     }
     butEl.addEventListener("huh", clicked);
-    nameElement.appendChild(butEl);
+    
+    
 }
 
 example();

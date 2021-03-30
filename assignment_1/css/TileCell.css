@@ -14,9 +14,9 @@
    background-color: darkred;
 }
 
-#TileCell .ChangedSquare{
-    height: 123px;
-    width: 123px;
+#TileCell .Square2 {
+    height: 69px;
+    width: 69px;
     background-color: deeppink;
 }
 
