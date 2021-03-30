@@ -11,6 +11,7 @@
     width: 20px;
     Height: 30px;
     background-color: green;
+    animation: travel 10s linear infinite;
     
 	
     
@@ -39,10 +40,9 @@
     background-color: lawngreen;
     color:rgb(255, 255, 255);
 }
-#WildArch .oval{
-    height: 50px;
-  width: 100px;
-  background-color: blue;
-  border-radius: 50%;
+#WildArch .oval1{
+    width: 100px;
+    height: 300px;
+    border-radius: 50%;
 }
 
