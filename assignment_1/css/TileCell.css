@@ -8,13 +8,13 @@
     color: #f700ff;
 }
 
-#TileCell .Square {
+#TileCell .RedBox {
    height: 69px;
    width: 69px;
    background-color: darkred;
 }
 
-#TileCell .Square2 {
+#TileCell .PinkBox {
     height: 69px;
     width: 69px;
     background-color: deeppink;
