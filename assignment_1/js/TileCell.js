@@ -10,19 +10,24 @@ function example() {
     nameElement.appendChild(objectEl);
 
     //the geometric object
-    let squareEl = document.createElement("div");
-    squareEl.className = 'RedBox';
-    nameElement.appendChild(squareEl);
+    var joeMama = document.createElement("div");
+    joeMama.className = 'RedBox';
+    joeMama.id = 'squareID';
+    nameElement.appendChild(joeMama);
 
     //the colorchanging button
     let butEl = document.createElement("button");
-    butEl.textContent = "huh";
+    butEl.textContent = "FORTNITE EPIC";
     nameElement.appendChild(butEl);
 
     let clicked = function(){
-        squareEl.className = 'PinkBox';
+        //let joeMama = document.getElementById('squareID');
+        if(joeMama.className = 'RedBox'){
+            joeMama.className = 'PinkBox';
+        }
+        
     }
-    butEl.addEventListener("huh", clicked);
+    butEl.addEventListener("fortniet", clicked);
     
     
 }
