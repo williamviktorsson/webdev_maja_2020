@@ -26,7 +26,7 @@ function example() {
         number = number - 1
     }
     else
-        objectEl.textContent = "hej isak" 
+        objectEl.textContent = "hej elton" 
         number = number + 1
 }
 }
