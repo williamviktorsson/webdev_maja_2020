@@ -5,7 +5,7 @@
 function example() {
     let nameElement = document.getElementById("DrumArea");
     let objectEl = document.createElement("h3");
-    objectEl.textContent = "Example :)";
+    objectEl.textContent = "yeet";
     nameElement.appendChild(objectEl);
 }
 

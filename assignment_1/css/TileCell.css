@@ -5,6 +5,18 @@
 */ 
 
 #TileCell h3 {
-    color: #6699CC;
+    color: #f700ff;
+}
+
+#TileCell .RedBox {
+   height: 69px;
+   width: 69px;
+   background-color: darkred;
+}
+
+#TileCell .PinkBox {
+    height: 69px;
+    width: 69px;
+    background-color: deeppink;
 }
 

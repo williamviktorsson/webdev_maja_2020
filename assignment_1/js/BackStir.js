@@ -5,7 +5,7 @@
 function example() {
     let nameElement = document.getElementById("BackStir");
     let objectEl = document.createElement("h3");
-    objectEl.textContent = "Example :)";
+    objectEl.textContent = "Example:-)";
     nameElement.appendChild(objectEl);
 }
 
