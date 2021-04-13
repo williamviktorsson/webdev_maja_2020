@@ -1,8 +1,3 @@
-/*
-    Do everything you want in functions because you do not want to define global variables.
-*/
-
-// small change
 
 function example() {
     //Min namnen
@@ -12,9 +7,11 @@ function example() {
     nameElement.appendChild(objectEl);
 
     //Min fyrkanten
-    let squareEl = dokument.createElement("div")
-    squareEl.className = "KirnisBox";
+    let squareEl = dokument.createElement("h3")
+    //squareEl.className += " KirnisBox";
+    squareEl.textContent = "Amogus";
     nameElement.appendChild(squareEl);
+
 }
 
 example();
