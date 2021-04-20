@@ -9,8 +9,4 @@ function example() {
     nameElement.appendChild(objectEl);
 }
 
-function button(){
-   let bobjectEl = document.createElement("button");
-   nameElement.appendChild(bobjectEl);
-}
 
