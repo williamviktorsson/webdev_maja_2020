@@ -6,19 +6,24 @@ function example() {
     nameElement.appendChild(objectEl);
 
     //Min cirkeln
-        let cirkel = document.createElement("div")
-        cirkel.className = "KirnisCirkel"
-        nameElement.appendChild(cirkel)
+        let circle = document.createElement("div")
+        circle.className = "KirnisCircle"
+        nameElement.appendChild(circle)
 
     //Min knappen
-        let button = document.createElement("knapp")
-        button.textContent = "tryck för epic moment"
-        button.className = "KirnisKnapp"
-        let knappClick = function(){
-            cirkel.style.backgroundColor = "Green";
+        let button = document.createElement("Button")
+        button.textContent = "Roblox"
+        button.className = "KirnisButton"
+        let buttonClick = function(){
+            circle.style.backgroundColor = "pink";
         };
-        button.addEventListener("click", knappClick)
+        button.addEventListener("click", buttonClick)
         nameElement.appendChild(button)
+
+    //Min kuben
+        let square = document.getElement("square")
+        square.className = "KirnisSquare"
+        nameElement.appendChild(square)
 
     
 
