@@ -4,11 +4,21 @@
     or children of elements with your ID
 */ 
 
-#CodeTool h3 {
-    color: pink;
+#PumpRage h3 {
+    color: #6699CC;
+}
+    
+
+
+#PumpRage button {
+    height: 20px;
+    width: 90px;
+    position: relative;
+    right: -110px;
+    bottom: 100px;
 }
 
-#CodeTool .KirnisCircle {
+#PumpRage .Cirkel {
     position: relative;
     height: 100px;
     width: 100px;

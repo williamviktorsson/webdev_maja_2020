@@ -5,6 +5,13 @@
 */ 
 
 #CoreMonk h3 {
-    color: #6699CC;
-}
+    color: #ff8400;
+} 
 
+#triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #ff8400;
+}
