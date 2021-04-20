@@ -4,7 +4,16 @@
     or children of elements with your ID
 */ 
 
+
+
+
 #MealGoat h3 {
-    color: #6699CC;
+    color: #e48508;
 }
 
+.MGBotton {
+    background-color: aqua;
+    width: 20px;
+    height: 20px;
+    
+}

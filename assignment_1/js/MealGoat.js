@@ -5,8 +5,10 @@
 function example() {
     let nameElement = document.getElementById("MealGoat");
     let objectEl = document.createElement("h3");
-    objectEl.textContent = "Example :)";
+    objectEl.textContent = "Test no.69";
     nameElement.appendChild(objectEl);
+
+    let botton = document.getElementById("botton")
 }
 
 example();
