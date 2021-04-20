@@ -12,7 +12,7 @@
     position: relative;
     height: 50px;
     width: 50px;
-    background-color: blue;
+    background-color: greenyellow;
     border-radius: 50%;
 }
 
@@ -22,4 +22,11 @@
     position: relative;
     right: -110px;
     bottom: 100px;
+}
+
+#CodeTool .KirnisSquare {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background-color: blueviolet;
 }

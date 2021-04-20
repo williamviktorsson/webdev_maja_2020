@@ -15,13 +15,15 @@ function example() {
         button.textContent = "Roblox"
         button.className = "KirnisButton"
         let buttonClick = function(){
-            circle.style.backgroundColor = "green";
+            circle.style.backgroundColor = "pink";
         };
         button.addEventListener("click", buttonClick)
         nameElement.appendChild(button)
 
     //Min kuben
-        let 
+        let square = document.getElement("square")
+        square.className = "KirnisSquare"
+        nameElement.appendChild(square)
 
     
 
