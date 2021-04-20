@@ -18,10 +18,12 @@ function example() {
     ruta.className = "ruta";
     nameElement.appendChild(ruta);
 
+
    
 
     let clickOn = function(){
         ruta.style.background = "green"
+        
         buttonClick.textContent ="mähhhehe"
     }
     buttonClick.addEventListener("click", clickOn);
