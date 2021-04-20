@@ -11,7 +11,7 @@ function addNavBar() {
         "Test2": "test2.html",
     };
 
-    let navbar = document.getElementById("navbar");
+    let navbar = document.getElementById("myNavbar");
     
     for (let key in navigation) {
         let value = navigation[key];
@@ -26,11 +26,9 @@ function addNavBar() {
 }
 
 function setCorrectNavBarItemAsActive() {
-    let array = document.getElementById("navbar").children;
+    let array = document.getElementById("myNavbar").children;
     for (let index = 0; index < array.length; index++) {
         const element = array[index];
-        console.log(location.pathname);
-        console.log(element.href);
         element.className += (element.hasAttribute("href") && element.href.includes(location.pathname)) ? "active" : ""
     }
 }
