@@ -53,7 +53,7 @@ function slideshowFunc() {
     let pictures = ['https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg', 'https://images.pexels.com/photos/97077/pexels-photo-97077.jpeg', 'https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg']
     for (let i = 0; i < pictures.length; i++) {
         let picEl = document.createElement('img');
-        picEl.src = pictures[i];
+        picEl.src = pictures;
         picEl.alt = 'Picture of code';
         picEl.style.height = '250px'
         slideEl.appendChild(picEl);
