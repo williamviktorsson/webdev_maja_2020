@@ -22,3 +22,5 @@ function addNavBar() {
         navbar.appendChild(element);
     }
 }
+
+window.addEventListener('DOMContentLoaded', addNavBar, false);
