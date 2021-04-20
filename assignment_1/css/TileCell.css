@@ -8,15 +8,63 @@
     color: #f700ff;
 }
 
-#TileCell .RedBox {
-   height: 69px;
-   width: 69px;
-   background-color: darkred;
+#TileCell .RedTri {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
 }
 
-#TileCell .PinkBox {
+#TileCell .PinkTri {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid hotpink;
+}
+
+#TileCell .Box {
     height: 69px;
     width: 69px;
-    background-color: rgb(0, 226, 68);
-}
-
+    background-color: red;
+    animation-name: boogieBomb;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }  
+   
+  @keyframes boogieBomb {
+      0% {
+          background-color: royalblue;
+      }
+      10% {
+          background-color: seagreen;
+      }
+      20% {
+          background-color: springgreen;
+      }
+      30% {
+          background-color: violet;
+      }
+      40% {
+          background-color: coral;
+      }
+      50%{
+          background-color: deeppink;
+      }
+      60%{
+          background-color: lightcoral;
+      }
+      70%{
+          background-color: palegreen;
+      }
+      80%{
+          background-color: skyblue;
+      }
+      90%{
+          background-color: darkviolet;
+      }
+      100%{
+          background-color: fuchsia;
+      }
+  }
