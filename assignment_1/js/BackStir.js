@@ -43,7 +43,7 @@ function example() {
 
         let allaBilder = ["https://scontent.fbma2-1.fna.fbcdn.net/v/t1.6435-9/109228874_3347407255317583_4680176748756913683_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=9267fe&_nc_ohc=nO6nVHhzP7IAX9QEQGb&_nc_ht=scontent.fbma2-1.fna&oh=6be5c39af6490ecf2fd60219210bdf93&oe=609BAF09","https://tmssl.akamaized.net/images/wappen/big/8885.png?lm=1411063846","http://www2.sportadmin.se/vault/getIm.asp?ID=7775&typ=0&v=1"]
 
-        abijitNaskar.src = allaBilder[Math.floor(Math.random()*4)]
+        abijitNaskar.src = allaBilder[Math.floor(Math.random()*3)]
         skogge.src = allaBilder[Math.floor(Math.random()*3)]
         elton.src = allaBilder[Math.floor(Math.random()*3)]
     }
