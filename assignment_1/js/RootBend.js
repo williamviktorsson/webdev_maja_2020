@@ -5,9 +5,15 @@
 function example() {
     let nameElement = document.getElementById("RootBend");
     let objectEl = document.createElement("h3");
-    objectEl.textContent = "Example :)";
+    objectEl.textContent = "Bamses bananer";
     nameElement.appendChild(objectEl);
 }
 
-example();
+    example()
 
+    function buttons(){
+        let name=document.getElementById("RootBend");
+        let buttonClick = document.createElement("button");
+        
+
+    }

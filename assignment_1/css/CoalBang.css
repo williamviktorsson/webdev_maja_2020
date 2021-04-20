@@ -24,9 +24,32 @@
     margin-top: 10px;
 }
 #CoalBang .newBox:hover{
-    background-color: rgb(83, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
 
+#CoalBang .circle{
+    background-color: blue;
+    color: blue;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+#CoalBang .pic{
+    min-width: 200px;
+    max-width: 200px;
+    margin-top: 5px;   
+    animation: leftright 10s linear infinite; 
+}
+@keyframes leftright{
+    0%,100%{
+        transform: translate3d(10px,0,0);
+    }
+    50%{
+        transform: translate3d(1330px,0,0);
+    }
+}
 
 
 
