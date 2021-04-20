@@ -8,7 +8,8 @@ function example() {
     objectEl.textContent = "Test no.69";
     nameElement.appendChild(objectEl);
 
-    
+
+
     let buttonClick = document.createElement("button");
     buttonClick.textContent = "Click me :)";
     nameElement.appendChild(buttonClick)
