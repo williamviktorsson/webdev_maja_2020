@@ -18,7 +18,19 @@ function addNavBar() {
         let element = document.createElement("a");
         element.textContent = key;
         element.href = value;
-        element.className += (location.pathname.includes(value) || (!location.pathname.includes(".html") && value.includes("index.html"))) ? " active" : ""
+
+        let path = location.pathname;
+
+        // The special case where you navigate to the folder containing the website "examination_webdev/"
+        // which defaults to index.html
+        if (path.endsWith("/") && value == "index.html") {
+            element.className += " active"
+        } else {
+            // all other cases end in .html
+            element.className += location.pathname.includes(value) ? " active" : "";
+        }
+
+
         navbar.appendChild(element);
     }
 }
