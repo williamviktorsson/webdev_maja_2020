@@ -1,160 +1,149 @@
-
-/*
-    Make sure to only make css changes to elements with your ID,
-    or children of elements with your ID
-*/ 
-
-<<<<<<< HEAD
-#FailFire h3 {
-    color: #cca066;
-=======
 #FailFire{
-    color: #270606;
-    background: linear-gradient(45deg, rgb(204, 199, 255), #373a68);
-    width: 75%;
-    padding: 20px 50px 20px 50px;
-    margin-left: 7.5%;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: rgb(24, 24, 24);
-    size: 32px;
-    box-shadow: black 0px 15px 30px 0px;
->>>>>>> d536f4c27b2a4364c27fc1f7a3b0d1e02b12897f
+  color: #270606;
+  background: linear-gradient(45deg, rgb(204, 199, 255), #373a68);
+  width: 75%;
+  padding: 20px 50px 20px 50px;
+  margin-left: 7.5%;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: rgb(24, 24, 24);
+  size: 32px;
+  box-shadow: black 0px 15px 30px 0px;
 }
 .FFnagot{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: rgb(161, 91, 91);
-    width: 50%;
-    margin-left: 25%;
-    border-radius: 5px;
-    border-color: black;
-    border-style: solid;
-    text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(161, 91, 91);
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 5px;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
 }
 
-    .FFknapp{
-        width: 35%;
-        height: 35px;
-        margin-left: 32.5%;
-        background: linear-gradient(45deg, rgb(232, 255, 22), #ff00f2);
-        border-radius: 5px;
-    }
-    .FFknapp:hover{
-        background: linear-gradient(45deg, rgb(201, 221, 20), #cc02c2);
-    }
+  .FFknapp{
+      width: 35%;
+      height: 35px;
+      margin-left: 32.5%;
+      background: linear-gradient(45deg, rgb(232, 255, 22), #ff00f2);
+      border-radius: 5px;
+  }
+  .FFknapp:hover{
+      background: linear-gradient(45deg, rgb(201, 221, 20), #cc02c2);
+  }
 
-    .FFregret{
-        padding-top: 400px;
-        padding-bottom: 400px;
-        animation-name: FFwtf;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-    }
+  .FFregret{
+      padding-top: 400px;
+      padding-bottom: 400px;
+      animation-name: FFwtf;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+  }
 
-    @keyframes FFwtf{
-        10%{
-            transform: rotate(45deg);
-          }
-          20%{
-            background-color: rgb(255, 0, 0);
-            transform: rotate(-85deg);
-          }
-          30%{
-            transform: rotate(145deg);
-            background-color: rgb(34, 146, 113);
-          }
-          40%{
-            transform: rotate(-25deg);
-          }
-          50%{
-            background-color: rgb(108, 16, 255);
-            transform: rotate(-45deg);
-          }
-          60%{
-            transform: rotate(45deg);
-            transform: scale(1.5);
-          }
-          70%{
-            transform: rotate(-95deg);
-            transform: scale(0.6);
-          }
-          80%{
-            background-color: rgb(238, 65, 186);
-            transform: rotate(45deg);
-            transform: scale(1.1);
-          }
-          90%{
-            background-color: rgb(167, 215, 255);
-            transform: rotate(45deg);
-            transform: scale(2);
-          }
-          100%{
-            transform: rotate(-90deg);
-            transform: scale(0.7);
-          }
-    }
-
-    .FFholder{
-        background-color: rgb(43, 43, 43);
-        border-radius: 5px;
-        width: 120px;
-        height: 120px;
-        padding: 10px 10px 10px 10px;
-        margin-left: 10px;
-
-    }
-
-    .FFloadingObject{
-        width: 20px;
-        height: 20px;
-        border-radius: 5px;
-    }
-    .FFloading{
-        
-        animation: FFload 1s linear infinite;
-    }
-    
-  
-    @keyframes FFload{
-        0%,100%{transform: translate3d(0,0,0);}
-        12.5%{transform: translate3d(10px,0,0);}
-        25%{transform: translate3d(100px,0,0);}
-        37.5%{transform: translate3d(100px,10px,0);}
-        50%{transform: translate3d(100px,100px,0);}
-        62.5%{transform: translate3d(90px,100px,0);}
-        75%{transform: translate3d(0,100px,0);}
-        87.5%{transform: translate3d(0,90px,0);}
-    }
-
-    .FFmoving{
-        
-        animation: FFtravel 10s linear infinite;
-    }
-    
-  
-    @keyframes FFtravel{
+  @keyframes FFwtf{
+      10%{
+          transform: rotate(45deg);
+        }
+        20%{
+          background-color: rgb(255, 0, 0);
+          transform: rotate(-85deg);
+        }
+        30%{
+          transform: rotate(145deg);
+          background-color: rgb(34, 146, 113);
+        }
+        40%{
+          transform: rotate(-25deg);
+        }
         50%{
-            background-color: darkmagenta;
-            transform: translate3d(500px,0,0);
+          background-color: rgb(108, 16, 255);
+          transform: rotate(-45deg);
+        }
+        60%{
+          transform: rotate(45deg);
+          transform: scale(1.5);
+        }
+        70%{
+          transform: rotate(-95deg);
+          transform: scale(0.6);
+        }
+        80%{
+          background-color: rgb(238, 65, 186);
+          transform: rotate(45deg);
+          transform: scale(1.1);
+        }
+        90%{
+          background-color: rgb(167, 215, 255);
+          transform: rotate(45deg);
+          transform: scale(2);
         }
         100%{
-            transform: translate3d(0,0,0);
+          transform: rotate(-90deg);
+          transform: scale(0.7);
         }
-    }
+  }
 
-    .FFimgHolder{
-        border-radius: 5px;
-        margin: 10px 10px 10px 10px;
-        height: 400px;
-        width: 600px;
-    }
+  .FFholder{
+      background-color: rgb(43, 43, 43);
+      border-radius: 5px;
+      width: 120px;
+      height: 120px;
+      padding: 10px 10px 10px 10px;
+      margin-left: 10px;
 
-    .FFgamer{
-        background-color: black;
-        width: 15px;
-        height: 15px;
-        border-radius: 3px;
+  }
 
-    }
+  .FFloadingObject{
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+  }
+  .FFloading{
+      
+      animation: FFload 1s linear infinite;
+  }
+  
+
+  @keyframes FFload{
+      0%,100%{transform: translate3d(0,0,0);}
+      12.5%{transform: translate3d(10px,0,0);}
+      25%{transform: translate3d(100px,0,0);}
+      37.5%{transform: translate3d(100px,10px,0);}
+      50%{transform: translate3d(100px,100px,0);}
+      62.5%{transform: translate3d(90px,100px,0);}
+      75%{transform: translate3d(0,100px,0);}
+      87.5%{transform: translate3d(0,90px,0);}
+  }
+
+  .FFmoving{
+      
+      animation: FFtravel 10s linear infinite;
+  }
+  
+
+  @keyframes FFtravel{
+      50%{
+          background-color: darkmagenta;
+          transform: translate3d(500px,0,0);
+      }
+      100%{
+          transform: translate3d(0,0,0);
+      }
+  }
+
+  .FFimgHolder{
+      border-radius: 5px;
+      margin: 10px 10px 10px 10px;
+      height: 400px;
+      width: 600px;
+  }
+
+  .FFgamer{
+      background-color: black;
+      width: 15px;
+      height: 15px;
+      border-radius: 3px;
+
+  }
