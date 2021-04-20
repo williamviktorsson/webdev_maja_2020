@@ -5,9 +5,8 @@
 function example() {
     let nameElement = document.getElementById("RootBend");
     let objectEl = document.createElement("h3");
-    objectEl.textContent = "Bamses honung";
+    objectEl.textContent = "Bamses bananer";
     nameElement.appendChild(objectEl);
 }
 
-example();
 
