@@ -9,5 +9,4 @@ function example() {
     nameElement.appendChild(objectEl);
 }
 
-example();
 
