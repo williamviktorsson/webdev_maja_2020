@@ -8,7 +8,20 @@
     color: #6699CC;
 }
     
+#PumpRage #Naskar1{
+height: 200px;
+width: 200px;
+}
 
+#PumpRage #Naskar2{
+    height: 200px;
+    width: 200px;
+}
+
+#PumpRage #Naskar3{
+    height: 200px;
+    width: 200px;
+}
 
 #PumpRage button {
     height: 20px;
@@ -24,4 +37,14 @@
     width: 100px;
     background-color: blue;
     border-radius: 50%;
+    animation: leftright 10s linear infinite;
+    
+}
+@keyframes leftright{
+    0%,100%{
+        transform: translate3d(10px,0,0);
+    }
+    50%{
+        transform: translate3d(1330px,0,0);
+    }
 }
