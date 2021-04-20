@@ -4,6 +4,10 @@
     or children of elements with your ID
 */ 
 
+<<<<<<< HEAD
+#FailFire h3 {
+    color: #cca066;
+=======
 #FailFire{
     color: #270606;
     background: linear-gradient(45deg, rgb(204, 199, 255), #373a68);
@@ -15,6 +19,7 @@
     border-color: rgb(24, 24, 24);
     size: 32px;
     box-shadow: black 0px 15px 30px 0px;
+>>>>>>> d536f4c27b2a4364c27fc1f7a3b0d1e02b12897f
 }
 .FFnagot{
     padding-top: 20px;
