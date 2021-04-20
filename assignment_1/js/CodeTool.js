@@ -7,9 +7,8 @@ function example() {
     nameElement.appendChild(objectEl);
 
     //Min fyrkanten
-    let squareEl = dokument.createElement("h3")
-    //squareEl.className += " KirnisBox";
-    squareEl.textContent = "Amogus";
+    let squareEl = dokument.createElement("div")
+    squareEl.textContent = "KirnisBox";
     nameElement.appendChild(squareEl);
 
 }
