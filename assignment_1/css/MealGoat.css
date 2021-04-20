@@ -9,11 +9,23 @@
 
 #MealGoat h3 {
     color: #e48508;
+    padding: 20px;
 }
 
-.MGBotton {
-    background-color: aqua;
-    width: 20px;
-    height: 20px;
-    
-}
+    .ruta{
+        width: 300px;
+        height: 100px;
+        background-color: salmon;
+    }
+        .cirkel{
+            margin-right:36px;
+            background: white;
+        }
+
+    button{
+        margin-top: 40px;
+        line-height: 60px;
+        background: turquoise;
+    }
+        
+
