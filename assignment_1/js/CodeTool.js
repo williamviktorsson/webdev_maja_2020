@@ -15,7 +15,7 @@ function example() {
         button.textContent = "Roblox"
         button.className = "KirnisButton"
         let buttonClick = function(){
-            cirkel.style.backgroundColor = "green";
+            circle.style.backgroundColor = "green";
         };
         button.addEventListener("click", buttonClick)
         nameElement.appendChild(button)
