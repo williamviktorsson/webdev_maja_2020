@@ -12,7 +12,7 @@ function addNavBar() {
     };
 
     let navbar = document.getElementById("myNavbar");
-    
+
     for (let key in navigation) {
         let value = navigation[key];
         let element = document.createElement("a");
@@ -22,13 +22,13 @@ function addNavBar() {
     }
 
     setCorrectNavBarItemAsActive();
-
 }
 
 function setCorrectNavBarItemAsActive() {
     let array = document.getElementById("myNavbar").children;
     for (let index = 0; index < array.length; index++) {
         const element = array[index];
-        element.className += (element.hasAttribute("href") && element.href.includes(location.pathname)) ? "active" : ""
+        element.className += (element.hasAttribute("href") && element.href.includes(location.pathname.includes(".html") ? location.pathname : "index.html")) ? " active" : ""
+
     }
 }
