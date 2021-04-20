@@ -5,6 +5,11 @@
 */ 
 
 #CodeTool h3 {
-    color: #6699CC;
+    color: pink;
 }
 
+#CodeTool .KirnisBox {
+    height: 42px;
+    width: 42px;
+    background-color: darkblue;
+}

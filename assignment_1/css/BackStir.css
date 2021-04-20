@@ -8,3 +8,18 @@
     color: #6699CC;
 }
 
+#BackStir #naskar{
+    width: 200px;
+    position: relative;
+    height: 200px;
+}
+
+#BackStir .rectangle{
+    width: 200px;
+    Height: 300px;
+
+    background-color: green;
+
+}
+
+    

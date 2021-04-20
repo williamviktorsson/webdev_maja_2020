@@ -3,10 +3,28 @@
 */
 
 function example() {
+    //texten som säger "oändlig smärta"
     let nameElement = document.getElementById("TileCell");
     let objectEl = document.createElement("h3");
-    objectEl.textContent = "Example :)";
+    objectEl.textContent = "Oändlig smärta";
     nameElement.appendChild(objectEl);
+
+    //the geometric object
+    let squareEl = document.createElement("div");
+    squareEl.className = 'RedBox';
+    nameElement.appendChild(squareEl);
+
+    //the colorchanging button
+    let butEl = document.createElement("button");
+    butEl.textContent = "huh";
+    nameElement.appendChild(butEl);
+
+    let clicked = function(){
+        squareEl.className = 'PinkBox';
+    }
+    butEl.addEventListener("huh", clicked);
+    
+    
 }
 
 example();
