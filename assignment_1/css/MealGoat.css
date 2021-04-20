@@ -4,7 +4,25 @@
     or children of elements with your ID
 */ 
 
+
+
+
 #MealGoat h3 {
-    color: #6699CC;
+    color: #e48508;
+    padding: 20px;
 }
+
+    .ruta{
+        width: 300px;
+        height: 100px;
+        background-color: salmon;
+    }
+      
+
+#MealGoat button{
+    margin-top: 40px;
+    line-height: 60px;
+    background: turquoise;
+    }
+        
 

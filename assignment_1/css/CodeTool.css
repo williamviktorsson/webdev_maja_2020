@@ -10,8 +10,22 @@
 
 #CodeTool .KirnisCircle {
     position: relative;
+    height: 50px;
+    width: 50px;
+    background-color: greenyellow;
+    border-radius: 50%;
+}
+
+#CodeTool button {
     height: 100px;
     width: 100px;
-    background-color: blue;
-    border-radius: 50%;
+    position: relative;
+    right: -110px;
+    bottom: 100px;
+}
+
+#CodeTool .KirnisSquare {
+    height: 50px;
+    width: 50px;
+    background-color: blueviolet;
 }
