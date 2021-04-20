@@ -1,7 +1,3 @@
-/*
-    Do everything you want in functions because you do not want to define global variables.
-*/
-
 
 function example() {
     let nameElement = document.getElementById("CoalBang");
@@ -16,9 +12,6 @@ function example() {
     boxEl1.className = "newBox1";
     nameElement.appendChild(boxEl1)
 
-    
-
-    
     boxEl.addEventListener ("click",buttonfunc)
     
     function buttonfunc(){
@@ -31,7 +24,6 @@ function example() {
             
         } else if(document.getElementById("Isak").textContent == "Du är fin"){
         document.getElementById("Isak").textContent = "Hej Isak" 
-            
         }
 
     var piclist = []
@@ -55,15 +47,8 @@ function example() {
         }
         pic[0].src = piclist[i]
         setTimeout(changeImg,time)
-        console.log("hej")
     }
-    window.onload = changeImg;
-
-    
-    
-    
-    
-    
+    window.onload = changeImg;   
 }
 example();
 
