@@ -5,9 +5,9 @@ function example() {
     let objectEl = document.createElement("h3");
     nameElement.appendChild(objectEl);
 
-    //Min fyrkanten
-    let circle = dokument.createElement("div")
-    circle.className = "KirnisCircle";
+    //Min cirkeln
+    let cirkel = document.createElement("div")
+    cirkel.className = "KirnisCircle"
 
 }
 

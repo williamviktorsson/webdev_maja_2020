@@ -10,8 +10,8 @@
 
 #CodeTool .KirnisCircle {
     position: relative;
-    height: 42px;
-    width: 42px;
-    background-color: darkblue;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
     border-radius: 50%;
 }
