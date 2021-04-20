@@ -19,8 +19,6 @@ function addNavBar() {
         element.textContent = key;
         element.href = value;
         navbar.appendChild(element);
-        console.log(key);
-        console.log(value)
     }
 
     setCorrectNavBarItemAsActive();
@@ -31,6 +29,8 @@ function setCorrectNavBarItemAsActive() {
     let array = document.getElementById("navbar").children;
     for (let index = 0; index < array.length; index++) {
         const element = array[index];
+        console.log(location.pathname);
+        console.log(element.href);
         element.className += (element.hasAttribute("href") && element.href.includes(location.pathname)) ? "active" : ""
     }
 }
