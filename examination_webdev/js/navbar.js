@@ -18,17 +18,7 @@ function addNavBar() {
         let element = document.createElement("a");
         element.textContent = key;
         element.href = value;
+        element.className += (location.pathname.includes(value) || (!location.pathname.includes(".html") && value.includes("index.html"))) ? " active" : ""
         navbar.appendChild(element);
-    }
-
-    setCorrectNavBarItemAsActive();
-}
-
-function setCorrectNavBarItemAsActive() {
-    let array = document.getElementById("myNavbar").children;
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
-        element.className += (element.hasAttribute("href") && element.href.includes(location.pathname.includes(".html") ? location.pathname : "index.html")) ? " active" : ""
-
     }
 }
