@@ -1,8 +1,8 @@
 /*
     Do everything you want in functions because you do not want to define global variables.
 */
-
-
+function FFexample()
+{
 let nameElement = document.getElementById("FailFire");
 let objectEl = document.createElement("h3");
 objectEl.textContent = "You're gonna have a great time";
@@ -90,6 +90,14 @@ var imgChanger = function(e){
 }
 
 
+function RandomNumber(min, max) {
+    return (Math.floor(Math.random() * (max - min + 1) + min)).toString();
+}
+
+function RandomColor(){
+    return "rgb(" + RandomNumber(0,255) + "," + RandomNumber(0,255) + "," + RandomNumber(0,255) + ")";
+}
+
 slideshow.addEventListener("click", imgChanger);
 
 
@@ -102,9 +110,11 @@ var comeBack = false;
 var anim = function(){
     if (offset >= 100){
         comeBack = true;
+        gamer.style.backgroundColor = RandomColor();
     }
     if (offset <= 0){
         comeBack = false;
+        gamer.style.backgroundColor = RandomColor();
     }
 
     if (comeBack){
@@ -116,4 +126,11 @@ var anim = function(){
     gamer.style.marginLeft = offset.toString() + "%";
 }
 
+var changerColor = function(){
+    loadingThing.style.backgroundColor = RandomColor();
+}
+
 window.setInterval(anim, 10);
+window.setInterval(changerColor, 100);
+}
+FFexample();
