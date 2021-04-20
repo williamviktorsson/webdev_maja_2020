@@ -8,10 +8,18 @@
     color: pink;
 }
 
-#CodeTool .KirnisCircle {
+#CodeTool .KirnisCirkel {
     position: relative;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     background-color: blue;
     border-radius: 50%;
+}
+
+#CodeTool button {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    right: -110px;
+    bottom: 100px;
 }
