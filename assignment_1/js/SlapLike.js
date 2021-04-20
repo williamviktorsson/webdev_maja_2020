@@ -1,6 +1,9 @@
 /*
     Do everything you want in functions because you do not want to define global variables.
 */
+let jacobRöster = 0
+let axelRöster = 0
+let isakRöster = 0
 
 function example() {
     let nameElement = document.getElementById("SlapLike");
@@ -21,18 +24,21 @@ function example() {
     let cirkel = document.createElement("p")
     cirkel.id = "cirkel"
 
+  
+
     var id = null
     function imgMove(){
         var pos = -300
-        
+        var pos2 = 0
         clearInterval(id)
         id = setInterval(frame, 5)
         function frame(){
             if(pos == 1550){
                 clearInterval(id)
                 imgMove()
-            } else {
+            }  else {
                 pos++
+               
                 img1.style.left = pos + "px"
                 img2.style.left = pos + "px"
                 
@@ -61,7 +67,7 @@ function example() {
         button1.textContent = "Jacob är bäst"
         box.appendChild(button1)
         button1.style.left = "30px"
-        button1.addEventListener("click", JAI )
+        button1.addEventListener("click", Jacob)
         
 
         let button2 = document.createElement("button")
@@ -70,6 +76,7 @@ function example() {
         button2.textContent = "Axel är bäst"
         button2.style.left = "125px"
         box.appendChild(button2)
+        button2.addEventListener("click", Axel)
         
 
         let button3 = document.createElement("button")
@@ -78,6 +85,16 @@ function example() {
         button3.textContent = "Isak är bäst"
         button3.style.left = "220px"
         box.appendChild(button3)
+        button3.addEventListener("click", Isak)
+
+        let button4 = document.createElement("button")
+        button4.className = "quizButton"
+        button4.id = "resultatKnapp"
+        button4.textContent = "Ställning"
+        button4.style.bottom = "200px"
+        nameElement.appendChild(button4)
+        button4.addEventListener("click", result)
+
 
         let jacob = document.createElement("img")
         jacob.src = "https://www.ufc.se/wp-content/uploads/2020/09/akad_jacob_berglund_200901_xl.jpg"
@@ -96,30 +113,46 @@ function example() {
         
     }
 
-    function JAI(){
-        if(document.getElementById("jacobKnapp").textContent == "Jacob är bäst"){
-            document.getElementById("jacobKnapp").textContent = "Jacob är bäst"
+    function Jacob(){
+        if(document.getElementById("jacobKnapp").style.backgroundColor = "navy"){
             document.getElementById("jacobKnapp").style.backgroundColor = "green"
-
-            document.getElementById("axelKnapp").textContent = "Axel suger"
-            document.getElementById("axelKnapp").style.backgroundColor = "red"
-
-            document.getElementById("isakKnapp").textContent = "Isak är mjä"
-            document.getElementById("isakKnapp").style.backgroundColor = "orange"
-        } else {
-            document.getElementById("jacobKnapp").textContent = "Jacob är bäst"
-            document.getElementById("jacobKnapp").style.backgroundColor = "navy"
-
-            document.getElementById("axelKnapp").textContent = "Axel är bäst"
-            document.getElementById("axelKnapp").style.backgroundColor = "navy"
-
-            document.getElementById("isakKnapp").textContent = "Isak är bäst"
-            document.getElementById("isakKnapp").style.backgroundColor = "navy"
+            jacobRöster++
         }
-        
         
     }
 
+    function Axel(){
+        if(document.getElementById("axelKnapp").style.backgroundColor = "navy"){
+            document.getElementById("axelKnapp").style.backgroundColor = "green"
+            axelRöster++
+
+        }
+    }
+
+    function Isak(){
+        if(document.getElementById("isakKnapp").style.backgroundColor == "navy" && document.getElementById("axelKnapp").style.backgroundColor == "navy" && document.getElementById("jacobKnapp").style.backgroundColor == "navy"){
+            document.getElementById("isakKnapp").style.backgroundColor = "green"  
+            isakRöster++
+        } else if(document.getElementById("axelKnapp").style.backgroundColor == "green"){
+            if(confirm("Vill du ändra din röst?\nStällningen just nu är:\nJacob: " + jacobRöster +" röster\nAxel: " + axelRöster +" röster\nIsak: " + isakRöster + " röster")){
+                isakRöster++
+                axelRöster--
+                document.getElementById("isakKnapp").style.backgroundColor = "green"
+                document.getElementById("axelKnapp").style.backgroundColor = "navy"
+            }
+        } else if(document.getElementById("jacobKnapp").style.backgroundColor == "green"){
+            if(confirm("Vill du ändra din röst?\nStällningen just nu är:\nJacob: " + jacobRöster +" röster\nAxel: " + axelRöster +" röster\nIsak: " + isakRöster + " röster")){
+                isakRöster++
+                jacobRöster--
+                document.getElementById("isakKnapp").style.backgroundColor = "green"
+                document.getElementById("jacobKnapp").style.backgroundColor = "navy"
+            }
+        }
+    }
+
+    function result(){
+        alert("Ställningen just nu är:\nJacob: " + jacobRöster +" röster\nAxel: " + axelRöster +" röster\nIsak: " + isakRöster + " röster")
+    }
    
     nameElement.appendChild(objectEl);
     nameElement.appendChild(cirkel)

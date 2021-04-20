@@ -43,3 +43,9 @@ Complete the following steps:
 7. Wait about a minute or ask for help with any git related issues. Then [view the results of your efforts here](assignment_1).
 
 8. If you want to make other parts of the page more visually pleasing without sabotaging with other students work, you may do so.
+
+# Examination
+
+1. Follow the instructions on goole classroom.
+
+2. You may use the [provided code for navigation](examination_webdev) freely.
