@@ -8,5 +8,3 @@ function example() {
     objectEl.textContent = "Bamses bananer";
     nameElement.appendChild(objectEl);
 }
-
-
