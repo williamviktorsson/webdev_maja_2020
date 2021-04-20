@@ -8,3 +8,12 @@ function example() {
     objectEl.textContent = "Bamses bananer";
     nameElement.appendChild(objectEl);
 }
+
+    example()
+
+    function buttons(){
+        let name=document.getElementById("RootBend");
+        let buttonClick = document.createElement("button");
+        
+
+    }
