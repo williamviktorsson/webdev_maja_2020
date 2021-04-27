@@ -14,10 +14,11 @@
   margin: 20px;
 }
 
-#RootBennd button{
+#RootBennd knapp{
   background-color: rgb(235, 20, 31);
   color: rgb(91, 219, 5);
   width: 100px;
+  position: relative;
 border: 15px  green;
 padding: 50px;
 margin: 20px;
