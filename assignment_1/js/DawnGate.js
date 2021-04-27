@@ -23,6 +23,12 @@ function example() {
     button.addEventListener("click", buttonClick);
     nameElement.appendChild(button);
 
+    let squareEl = document.createElement("div");
+    squareEl.className = "squareEl";
+    nameElement.appendChild(squareEl);
+
+    
+
 } 
 
 example();
