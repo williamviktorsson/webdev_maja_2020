@@ -5,6 +5,30 @@
 */ 
 
 #CoreMonk h3 {
-    color: #6699CC;
+    color: #ff9100;
+} 
+
+#CoreMonk .HugoTriangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #ff8400;
+}
+
+#CoreMonk .HugoUpTriangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
+
+#CoreMonk .HugoButton {
+  height: 25px;
+  width: 50px;
+  position: relative;
+  right: -110px;
+  bottom: 100px;
 }
 
