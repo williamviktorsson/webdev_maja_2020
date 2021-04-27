@@ -14,11 +14,12 @@ function example() {
  
      //button
      let button = document.createElement("button")
-     button.textContent = "Byt färg"
+     button.textContent = "Byt frukt"
      let buttonClick = function() {
-         cirkel.style.backgroundColor = 'red';
+        objectEl.textContent="Bamses päron";
          
      };
+     button.addEventListener("click", buttonClick)
      nameElement.appendChild(cirkel)
     nameElement.appendChild(button)
  
