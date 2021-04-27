@@ -8,12 +8,12 @@ function example() {
     objectEl.textContent = "Bamses bananer";
     nameElement.appendChild(objectEl);
 
-    let kanpp = document.createElement("Kanpp")
-    kanpp.textContent = "Byt färg";
+    let button = document.createElement("Button")
+    button.textContent = "Byt färg";
     let buttonClick= function(){
         h3.color= "red";
     }
-    kanpp.addEventListener("Click", buttonClick)
+    button.addEventListener("Click", buttonClick)
 }
 
     example()
