@@ -17,6 +17,7 @@
 #RootBend button {
   height: 20px;
   width: 90px;
+  color: red;
   position: relative;
   right: -110px;
   bottom: 100px;
@@ -24,11 +25,11 @@
 
 #RootBend .Cirkel {
   position: relative;
-  height: 100px;
+  height: 50px;
   width: 100px;
-  background-color: blue;
-  border-radius: 50%;
-  animation: leftright 10s linear infinite;
+  background-color: rgb(255, 0, 149);
+  border-radius: 40%;
+  animation: leftright 15s linear infinite;
   
 }
 
