@@ -4,24 +4,14 @@
     or children of elements with your ID
 */ 
 
-
 #RootBend h3 {
-  color: #6699CC;
-}
-  
-#RootBend #Naskar1{
-height: 200px;
-width: 200px;
-}
-
-#RootBend #Naskar2{
-  height: 200px;
-  width: 200px;
-}
-
-#RootBend #Naskar3{
-  height: 200px;
-  width: 200px;
+    
+    background-color: rgb(24, 20, 235);
+    color: rgb(91, 219, 5);
+    width: 300px;
+  border: 15px  green;
+  padding: 50px;
+  margin: 20px;
 }
 
 #RootBend button {
@@ -41,11 +31,9 @@ width: 200px;
   animation: leftright 10s linear infinite;
   
 }
-@keyframes leftright{
-  0%,100%{
-      transform: translate3d(10px,0,0);
-  }
-  50%{
-      transform: translate3d(1330px,0,0);
-  }
-}
+
+
+
+
+
+
