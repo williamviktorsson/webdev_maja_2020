@@ -29,7 +29,7 @@
     width: 50px;
     background-color: blueviolet;
     animation-name: RainbowBox;
-    animation-duration: 5s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
 }
 
