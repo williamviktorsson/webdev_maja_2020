@@ -2,6 +2,8 @@
     Do everything you want in functions because you do not want to define global variables.
 */
 
+
+
 function example() {
     let nameElement = document.getElementById("PourSale");
     let objectEl = document.createElement("h3");
@@ -28,33 +30,34 @@ function example() {
 
     knapp.addEventListener("click", onButtonClick);
 
+    var slideshow = ["https://i.pinimg.com/280x280_RS/fc/fd/49/fcfd49e044a51e6f4c76a6748b8fc2fc.jpg",
+    "https://m.media-amazon.com/images/I/71OpO-3gUfL._SS500_.jpg",
+    "https://ih1.redbubble.net/image.1543360260.9387/pp,504x498-pad,600x600,f8f8f8.jpg"]
+
+    var bilden = document.createElement("img");
+    bilden.src = slideshow[0];
+    nameElement.appendChild(bilden);
+
+    var ooga = 0;
+
+    var bich = function(){
+
+        bilden.src = slideshow[ooga];
+        ooga++;
+        console.log(ooga);
+
+        if(ooga == 3){
+            ooga = 0;
+        }
+
+    }
+    window.setInterval(bich, 2000);
 
 }
 
-var slideShow = function(container) {
-    this.images = [];
-    this.curImage = 0;
-    for (i = 0; i < container.childElementCount; i++) {
-        this.images.push(container.children[i]);
-        this.images[i].style.display = "none";
-    }
-    
-    // Handle going to to the next slide
-    var nextSlide = function() {
-        for (var i = 0; i < this.images.length; i++) {
-            this.images[i].style.display = "none";
-        }
-        this.images[this.curImage].style.display = "block";
-        this.curImage++;
-        if (this.curImage >= this.images.length) {
-            this.curImage = 0;
-        }
-        window.setTimeout(nextSlide.bind(this), 1000);
-    };
-    
-    nextSlide.call(this);
-};
-slideShow(document.getElementById("slideshow"));
+
+
+
 
 example();
 
