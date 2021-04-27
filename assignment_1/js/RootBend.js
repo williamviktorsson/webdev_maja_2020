@@ -8,13 +8,20 @@ function example() {
     objectEl.textContent = "Bamses bananer";
     nameElement.appendChild(objectEl);
 
-    let button = document.createElement("Button")
-    button.textContent = "Byt färg";
-    let buttonClick= function(){
-        h3.color= "red";
-    }
-    button.addEventListener("Click", buttonClick)
-    nameElement.appendChuld("Button")
+     //cirkel
+     let cirkel = document.createElement("div")
+     cirkel.className = "Cirkel"
+ 
+     //button
+     let button = document.createElement("button")
+     button.textContent = "Byt färg"
+     let buttonClick = function() {
+         cirkel.style.backgroundColor = 'red';
+         
+     };
+     nameElement.appendChild(cirkel)
+    nameElement.appendChild(button)
+ 
 }
 
     example()

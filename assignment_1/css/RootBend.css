@@ -14,16 +14,23 @@
   margin: 20px;
 }
 
-#RootBend Button{
-  background-color: rgb(235, 20, 31);
-  color: rgb(91, 219, 5);
-  width: 100px;
+#RootBend button {
+  height: 20px;
+  width: 90px;
   position: relative;
-border: 15px  green;
-padding: 50px;
-margin: 20px;
+  right: -110px;
+  bottom: 100px;
 }
 
+#RootBend .Cirkel {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  border-radius: 50%;
+  animation: leftright 10s linear infinite;
+  
+}
 
 
 
