@@ -28,4 +28,19 @@
     height: 50px;
     width: 50px;
     background-color: blueviolet;
+    animation-name: RainbowBox;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes RainbowBox {
+    0% {
+        background-color: blueviolet;
+    }
+    50% {
+        background-color: pink;
+    }
+    100% {
+        background-color: blueviolet;
+    }
 }
