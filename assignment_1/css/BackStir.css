@@ -7,4 +7,46 @@
 #BackStir h3 {
     color: #6699CC;
 }
+     
 
+#BackStir #naskar{
+    width: 200px;
+    position: relative;
+    height: 200px;
+    animation: leftright 5s linear infinite;
+
+}
+#BackStir #skogge{
+    width: 200px;
+    position: relative;
+    height: 200px;
+    animation: leftright 5s linear infinite;
+
+}
+#BackStir #elton{
+    width: 200px;
+    position: relative;
+    height: 200px;
+    animation: leftright 5s linear infinite;
+
+}
+
+
+#BackStir .rectangle{
+    width: 200px;
+    Height: 300px;
+
+    background-color: green;
+
+}
+@keyframes leftright{
+    0%,100%{
+        transform: translate3d(10px,0,0);
+    }
+    50%{
+        transform: translate3d(1330px,0,0);
+    }
+
+
+
+    
