@@ -19,24 +19,8 @@ function example(){
     buttonEl.onclick = buttonfunction;
     nameElement.appendChild(buttonEl);
 
-
-
-
-   
-
     
     
-
-  
-
-  
-    
-
-
-
-
-
-
     let ovalEl = document.createElement("div")
     ovalEl.className = "oval1"
     let g = 0;
@@ -56,28 +40,6 @@ function example(){
     nameElement.appendChild(ovalEl);
     changeColor();
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -89,69 +51,53 @@ function example(){
 
 
 }
+function slideshowPoggers() {
 
-example();
-
-function slideshow(){
-
-    let slideEl = document.createElement("div")
-    slideEl.id = "bruh"
+    let nameElement = document.getElementById("WildArch");
     
+    let bruhEl = document.createElement("div")
+    bruhEl.id = "slideshowcringe";
+    let nudes = ["https://images.pexels.com/photos/38280/monkey-mandril-africa-baboon-38280.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "https://images.pexels.com/photos/33535/primate-ape-thinking-mimic.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500", "https://images.pexels.com/photos/605223/pexels-photo-605223.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"]
+    for (let i = 0; i < nudes.length; i++) {
+        let lolEl = document.createElement('img');
+        lolEl.src = nudes[i];
+        lolEl.style.height = '300px'
+        bruhEl.appendChild(lolEl);
+    };
+    nameElement.appendChild(bruhEl)
 
-    let nudepics = ['https://scale.coolshop-cdn.com/product-media.coolshop-cdn.com/236NC5/b535b89568c240f3be08260009e21d83.jpg/f/minecraft-mini-crafter-zombie-plush.jpg', 'https://static.wikia.nocookie.net/minecraft/images/e/e8/New_Zombie.png/revision/latest?cb=20190525152011', 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/00/Zombie_SSBU.webp/revision/latest/scale-to-width-down/250?cb=20201002040351']
-    for (let i = 0; i < nudepics.length; i++){
-    let bruhEl = document.createElement("img")
-    bruhEl.src = nudepics[i]
-    slideEl.appendChild(bruhEl)
-
-        
-        
-    }
-    nameElement.appendChild(slideEl)
-  
-
-
-
-
-
-
-    var slideShow = function(container) {
-        this.nudepics = [];
-        this.curImage = 0;
-        for (i = 0; i < container.childElementCount; i++) {
-            this.nudepics.push(container.children[i]);
-            this.nudepics[i].style.display = "none";
+    
+        this.tiddies = [];
+        this.bruhImage = 0;
+        for ( i = 0 ; i < bruhEl.childElementCount; i++) {
+            this.tiddies.push(bruhEl.children[i]);
+            this.tiddies[i].style.display = "none";
         }
         
-       
-        var nextSlide = function() {
-            for (var i = 0; i < this.nudepics.length; i++) {
-                this.nudepics[i].style.display = "none";
+        // Handle going to to the next slide
+        var nextSlidebruh = function() {
+            for (var i = 0; i < this.tiddies.length; i++) {
+                this.tiddies[i].style.display = "none";
             }
-            this.nudepics[this.curImage].style.display = "block";
-            this.curImage++;
-            if (this.curImage >= this.nudepics.length) {
-                this.curImage = 0;
+            this.tiddies[this.bruhImage].style.display = "block";
+            this.bruhImage++;
+            if (this.bruhImage >= this.tiddies.length) {
+                this.bruhImage = 0;
             }
-            window.setTimeout(nextSlide.bind(this), 1000);
+            window.setTimeout(nextSlidebruh.bind(this), 1000);
         };
         
-        nextSlide.call(this);
+        nextSlidebruh.call(this);
     };
-    slideShow(document.getElementById("slideshow"));
-
-
-}
-slideshow();
-
-
-
-
-
-
-  
  
-    
+
+   
+
+
+
+
+example();
+slideshowPoggers();
 
 
 
@@ -161,6 +107,20 @@ slideshow();
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 function buttonfunction(){
    
     let triangleEl = document.getElementById("unaiTriangle")
