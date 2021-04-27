@@ -21,7 +21,7 @@ function example() {
         nameElement.appendChild(button);
 
     //Min kuben
-        let square = document.getElement("square");
+        let square = document.createElement("square");
         square.className = "KirnisSquare";
         nameElement.appendChild(square);
 
