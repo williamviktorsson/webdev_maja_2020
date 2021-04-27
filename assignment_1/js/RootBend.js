@@ -13,7 +13,7 @@ function example() {
     let buttonClick= function(){
         h3.color= "red";
     }
-
+    kanpp.addEventListener("Click", buttonClick)
 }
 
     example()
