@@ -5,13 +5,22 @@
 */ 
 
 #CoreMonk h3 {
-    color: #ff8400;
+    color: #ff9100;
 } 
 
-#triangle-down {
+#CoreMonk .HugoTriangle {
   width: 0;
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   border-top: 100px solid #ff8400;
 }
+
+#CoreMonk .HugoButton {
+  height: 25px;
+  width: 50px;
+  position: relative;
+  right: -110px;
+  bottom: 100px;
+}
+
