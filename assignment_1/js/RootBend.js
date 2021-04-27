@@ -14,6 +14,7 @@ function example() {
         h3.color= "red";
     }
     button.addEventListener("Click", buttonClick)
+    nameElement.appendChuld("Button")
 }
 
     example()
