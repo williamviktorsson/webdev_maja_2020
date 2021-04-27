@@ -9,10 +9,15 @@ function example() {
     objectEl.textContent = "Pogu Champu UwU";
     nameElement.appendChild(objectEl);
 
-        //Min triangel
+        //Min triangel (down)
         let triangelCM = document.createElement("div");
         triangelCM.className = "HugoTriangle";
         nameElement.appendChild(triangelCM);
+
+        //Min triangel (up)
+        let triangelUpCM = document.createElement("div");
+        triangelUpCM.className = "HugoUpTriangle";
+        nameElement.appendChild(triangelUpCM);
 
 
             //Min knappen

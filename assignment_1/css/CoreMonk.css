@@ -22,6 +22,19 @@
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   border-bottom: 100px solid red;
+  animation-name: triangleMove;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes triangleMove {
+  from {border-bottom: 100px solid red;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;}
+  to {border-bottom: 100px solid yellow;
+      border-left: 50px solid transparent;
+      border-right: 500px solid transparent;}
 }
 
 #CoreMonk .HugoButton {
