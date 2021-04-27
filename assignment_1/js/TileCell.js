@@ -10,7 +10,7 @@ function example() {
     nameElement.appendChild(objectEl);
 
     //the cringe
-    var joeMama = document.createElement("div");
+    let joeMama = document.createElement("div");
     joeMama.className = "RedTri";
     joeMama.id = 'squareID';
     nameElement.appendChild(joeMama);
@@ -21,7 +21,7 @@ function example() {
     nameElement.appendChild(jonasBros);
 
     //the cool cringe
-    var deezNuts = document.createElement("div");
+    let deezNuts = document.createElement("div");
     deezNuts.className = "Box"
     nameElement.appendChild(deezNuts);
     
@@ -33,44 +33,52 @@ function example() {
 
     jonasBros.addEventListener("click", clicked);
 
-    //slideshow list of pics
+   
+}
+
+let TCslide = function() {
+    
+    let nameElement = document.getElementById("TileCell");
+
     let goldScar = document.createElement('div');
     goldScar.id = "slideshow"
-    let list = ['http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/flushed-face.png', 'https://assets.icanet.se/t_product_large_v1,f_auto/5449000149343.jpg', 'https://lekmer.se/images/367944/full.png']
-    for (let i = 0; i < list.length ;i++){
+    let cuck = ['http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/flushed-face.png', 'https://assets.icanet.se/t_product_large_v1,f_auto/5449000149343.jpg', 'https://lekmer.se/images/367944/full.png']
+    for (let i = 0; i < cuck.length ;i++){
         let fortnite = document.createElement('img');
-        fortnite.src = list[i];
+        fortnite.src = cuck[i];
         fortnite.alt = "pictures representing pain";
+        fortnite.style.height = '200px';
         goldScar.appendChild(fortnite)
     }
     nameElement.appendChild(goldScar);
-}
-
-var slide = function(container) {
-    this.images = [];
-    this.curImage = 0;
-    for (i = 0; i < container.childElementCount; i++) {
-        this.images.push(container.children[i]);
-        this.images[i].style.display = "none";
+    
+    
+    
+    
+    this.gaGa = [];
+    this.goGo = 0;
+    for (i = 0; i < goldScar.childElementCount; i++) {
+        this.gaGa.push(goldScar.children[i]);
+        this.gaGa[i].style.display = "none";
     }
 
     // Handle going to to the next slide
-    var nextSlide = function() {
-        for (var i = 0; i < this.images.length; i++) {
-            this.images[i].style.display = "none";
+    let next = function() {
+        for (var i = 0; i < this.gaGa.length; i++) {
+            this.gaGa[i].style.display = "none";
         }
-        this.images[this.curImage].style.display = "block";
-        this.curImage++;
-        if (this.curImage >= this.images.length) {
-            this.curImage = 0;
+        this.gaGa[this.goGo].style.display = "block";
+        this.goGo++;
+        if (this.goGo >= this.gaGa.length) {
+            this.goGo = 0;
         }
-        window.setTimeout(nextSlide.bind(this), 1000);
+        window.setTimeout(next.bind(this), 1369);
     };
 
-    nextSlide.call(this);
+    next.call(this);
 };
 
 example();
-slideShow(document.getElementById("slideshow"));
+TCslide(document.getElementById("slideshow"));
 
  
