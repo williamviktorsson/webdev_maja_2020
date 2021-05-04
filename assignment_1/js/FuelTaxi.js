@@ -128,7 +128,7 @@ changeButton.setAttribute('type', 'button');
 nameElement.appendChild(changeButton);
 
 let rewindButton = document.createElement("button");
-rewindButton.textContent = "Click to jump to (default is 0, max 185sec) >>";
+rewindButton.textContent = "Click to jump to (default is 0) >>";
 rewindButton.setAttribute('id', 'rewind');
 rewindButton.setAttribute('onclick', 'rewindVideo()');
 rewindButton.setAttribute('type', 'text');
