@@ -27,8 +27,28 @@ function example() {
     squareEl.className = "squareEl";
     nameElement.appendChild(squareEl);
 
-    
+    var bilderLol = ["https://freepngimg.com/thumb/mouth/92712-ear-head-twitch-pogchamp-emote-free-download-png-hq-thumb.png", 
+    "https://cdn.akamai.steamstatic.com/steam/apps/731180/header.jpg?t=1557771759",];
 
+    var biner = document.createElement("img");
+    biner.src = bilderLol[0];
+    nameElement.appendChild(biner);
+
+    let bildtid = 0
+
+    var bytBild = function() {
+        
+
+        biner.src = bilderLol[bildtid];
+        bildtid++;
+        if (bildtid == 2) {
+            bildtid = 0;
+        }
+    }
+
+    window.setInterval(bytBild, 1000);
 } 
+
+
 
 example();
