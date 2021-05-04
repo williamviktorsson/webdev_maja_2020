@@ -8,3 +8,13 @@
     color: #bb47ff;
 }
 
+#colorButton {
+    position: relative;
+    background-color: yellow;
+    left: -544px;
+}
+
+#slideShow {
+    max-width: 20%;  
+    height: auto;
+}
