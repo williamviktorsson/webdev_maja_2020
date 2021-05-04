@@ -25,9 +25,10 @@ function example() {
     knapEl.addEventListener("click", knapElClick);
     
     
-    var showen = ["https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.J3ZIOBjTE7rkoeLWlR-QsgHaGg%26pid%3DApi&f=1",
+    var showen = [
     "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F9jX07VQtMNA%2Fhqdefault.jpg&f=1&nofb=1",
-    "https://i.pinimg.com/564x/8a/67/8d/8a678dcde4bfa9dcb9bc1166b19cf6d8.jpg"]
+    "https://i.pinimg.com/564x/c4/4f/99/c44f99ffb74969f9f237caf21b602258.jpg",
+    "https://i.pinimg.com/474x/60/ff/60/60ff604e26d25be75e07e5efb85c4b9b.jpg"]
 
     var picturas = document.createElement("img");
     picturas.src = showen[0];
