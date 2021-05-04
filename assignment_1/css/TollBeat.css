@@ -32,8 +32,9 @@
 
 #TollBeat button{
     width: 500px;
-    height: 5px;
-    position: relative;
+    height: 50px;
+    position: absolute;
+    
 }
 
 @keyframes anime {
@@ -54,3 +55,9 @@
       }
     }
   
+    #TollBeat img{
+        position: relative;
+        margin: auto;
+        height: 400px;
+        
+    }
