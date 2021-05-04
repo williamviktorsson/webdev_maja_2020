@@ -53,7 +53,8 @@ function example() {
 
     //appends
     
-    nameElement.appendChild(circEl);
+    nameElement.appendChild(circEl); 
+    
     nameElement.appendChild(picturas);
     nameElement.appendChild(knapEl);
     nameElement.appendChild(square);

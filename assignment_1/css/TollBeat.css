@@ -29,6 +29,13 @@
     
     background-color: #83e22b;
 }
+#TollBeat img{
+    position: relative;
+    margin: auto;
+    height: 400px;
+    width: 400px;
+    
+}
 
 #TollBeat button{
     width: 500px;
@@ -55,9 +62,4 @@
       }
     }
   
-    #TollBeat img{
-        position: relative;
-        margin: auto;
-        height: 400px;
-        
-    }
+    
