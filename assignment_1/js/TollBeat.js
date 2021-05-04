@@ -23,10 +23,9 @@ function example() {
         }
     };
     knapEl.addEventListener("click", knapElClick);
-
     
-
-    //appends
+   
+    
     nameElement.appendChild(circEl);
     nameElement.appendChild(knapEl);
     nameElement.appendChild(square);

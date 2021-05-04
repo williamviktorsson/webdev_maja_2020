@@ -16,6 +16,10 @@
     width: 50px;;
     
     background-color: #8a2be2;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
 }
 
 #TollBeat .square{
@@ -32,3 +36,21 @@
     position: relative;
 }
 
+@keyframes anime {
+    0% {
+        background: #d9c09c;
+      }
+      25% {
+        background: #ffffff;
+      }
+      50% {
+        background: #f3d1b8;
+      }
+      75% {
+        background: #f39874;
+      }
+      100% {
+        background: #647750;
+      }
+    }
+  
