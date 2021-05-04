@@ -28,6 +28,38 @@ function example() {
     }
     buttonClick.addEventListener("click", clickOn);
 
+
+    var i = 0
+    var imgList = []
+    var time = 2000;
+
+    imgList[0] = "https://media.whatscap.com/5fc/6fe/5fc6feabf1ef00380ed777d156df56dc1c381386_n.jpg"
+    imgList[1] = "https://i.pinimg.com/originals/b7/cd/ed/b7cded2e6c866a147425f525eeb1e56e.gif"
+        let img = document.createElement("img")
+        img.className = "image"
+        img.src = imgList[i]
+        nameElement.appendChild(img)
+
+    function slideShow(){
+        let img = document.getElementsByClassName("image")
+
+        if(i <imgList.length - 1){
+            i++
+        }else{
+            i = 0;
+        }
+        img[0].src = imgList[i]
+        setTimeout(slideShow,time);
+        
+    }
+    window.onload = slideShow;
+
+    
+    
+
+
+
+
 }
 
 example();

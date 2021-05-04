@@ -11,26 +11,28 @@ function addNavBar() {
         "Test2": "test2.html",
     };
 
-    let navbar = document.getElementById("navbar");
-    
+    let navbar = document.getElementById("myNavbar");
+
     for (let key in navigation) {
         let value = navigation[key];
         let element = document.createElement("a");
         element.textContent = key;
         element.href = value;
+
+        let path = location.pathname;
+
+        // The special case where you navigate to the folder containing the website "examination_webdev/"
+        // which defaults to index.html
+        if (path.endsWith("/") && value == "index.html") {
+            element.className += " active"
+        } else {
+            // all other cases end in .html
+            element.className += location.pathname.includes(value) ? " active" : "";
+        }
+
+
         navbar.appendChild(element);
-        console.log(key);
-        console.log(value)
-    }
-
-    setCorrectNavBarItemAsActive();
-
-}
-
-function setCorrectNavBarItemAsActive() {
-    let array = document.getElementById("navbar").children;
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
-        element.className += (element.hasAttribute("href") && element.href.includes(location.pathname)) ? "active" : ""
     }
 }
+
+window.addEventListener('DOMContentLoaded', addNavBar, false);
