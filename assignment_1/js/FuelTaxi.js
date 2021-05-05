@@ -93,7 +93,7 @@ lastEl.appendChild(emptyImg);
 imageChanger()
 
 
-
+//Youtube Embed
 let videoPlayer = document.createElement("iframe");
 videoPlayer.setAttribute('width', '560');
 videoPlayer.setAttribute('height', '315');
@@ -105,41 +105,41 @@ videoPlayer.setAttribute('allowfullscreen', 'true');
 nameElement.appendChild(videoPlayer);
 
 
-
+//Play Button
 let playButton = document.createElement("button");
 playButton.textContent = "Play";
 playButton.setAttribute('id', 'play');
 playButton.setAttribute('onclick', 'playVideo()');
 playButton.setAttribute('type', 'button');
 nameElement.appendChild(playButton);
-
+//Pause Button
 let pauseButton = document.createElement("button");
 pauseButton.textContent = "Pause";
 pauseButton.setAttribute('id', 'pause');
 pauseButton.setAttribute('onclick', 'pauseVideo()');
 pauseButton.setAttribute('type', 'button');
 nameElement.appendChild(pauseButton);
-//testin here
+//Video change Button
 let changeButton = document.createElement("button");
 changeButton.textContent = "Sheeeeesh";
 changeButton.setAttribute('id', 'change');
 changeButton.setAttribute('onclick', 'changeVideo()');
 changeButton.setAttribute('type', 'button');
 nameElement.appendChild(changeButton);
-
+//Skip Time Button
 let rewindButton = document.createElement("button");
 rewindButton.textContent = "Click to jump to (default is 0) >>";
 rewindButton.setAttribute('id', 'rewind');
 rewindButton.setAttribute('onclick', 'rewindVideo()');
 rewindButton.setAttribute('type', 'text');
 nameElement.appendChild(rewindButton);
-
+//Input For Where To Skip
 var inputForTime = document.createElement("INPUT");
 inputForTime.setAttribute("type", "number");
 inputForTime.setAttribute('id', 'changeTime');
-
 nameElement.appendChild(inputForTime);
 
+//Video Player
 let videoClip = document.createElement("video");
 let videoSource = document.createElement("source");
 videoSource.src = "https://cdn.discordapp.com/attachments/825782329384763412/825787778980904980/video0.mp4";
@@ -148,6 +148,7 @@ videoSource.setAttribute('id', 'sauce');
 videoSource.textContent = "Sorry, your browser does not support HTML5 video.";
 videoClip.setAttribute('name', 'myVid');
 
+//Functions For Buttons 
 function playVideo() { 
  videoClip.play(); 
 } 
@@ -161,7 +162,6 @@ function rewindVideo() {
     videoClip.currentTime = rewindTime;
 }
 
-//testin here
 function changeVideo() {
     console.log("sheeeesh been presed");
     var current_image = document.getElementById('sauce');
@@ -176,8 +176,6 @@ function changeVideo() {
     videoClip.load();
 }
 
-
-
-
+//Video Player And Source Append
 videoClip.appendChild(videoSource);
 nameElement.appendChild(videoClip);
